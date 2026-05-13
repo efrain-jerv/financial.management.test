@@ -59,15 +59,17 @@ namespace Empiria.Financial.Projects {
       StartDate = DateTime.Today;
     }
 
+    
+
+    protected override void OnLoad() {
+      Refresh();
+    }
+
     static public FinancialProject Parse(int id) => ParseId<FinancialProject>(id);
 
     static public FinancialProject Parse(string uid) => ParseKey<FinancialProject>(uid);
 
     static public FinancialProject Empty => ParseEmpty<FinancialProject>();
-
-    protected override void OnLoad() {
-      Refresh();
-    }
 
     #endregion Constructors and parsers
 
@@ -350,14 +352,7 @@ namespace Empiria.Financial.Projects {
     }
 
 
-    internal void SetParent(FinancialProject parent) {
-      Assertion.Require(parent, nameof(parent));
-
-      Parent = parent;
-
-      MarkAsDirty();
-    }
-
+    
 
     internal void Update(FinancialProjectFields fields) {
       Assertion.Require(fields, nameof(fields));
@@ -379,6 +374,16 @@ namespace Empiria.Financial.Projects {
     #endregion Methods
 
     #region Accounts aggregate methods
+
+
+    internal void SetParent(FinancialProject parent) {
+      Assertion.Require(parent, nameof(parent));
+
+      Parent = parent;
+
+      MarkAsDirty();
+    }
+
 
     internal FinancialAccount AddAccount(FinancialAccountFields fields) {
       Assertion.Require(fields, nameof(fields));
