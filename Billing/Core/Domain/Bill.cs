@@ -14,8 +14,8 @@ using System.Linq;
 using Empiria.Financial;
 using Empiria.Documents;
 using Empiria.Json;
-using Empiria.Parties;
 using Empiria.Ontology;
+using Empiria.Parties;
 
 using Empiria.Billing.Data;
 
@@ -30,8 +30,6 @@ namespace Empiria.Billing {
     protected Bill(BillType powertype) : base(powertype) {
       // Required by Empiria Framework for all partitioned types.
     }
-
-    static public Bill Parse(int billId) => ParseId<Bill>(billId);
 
     static public Bill Parse(int id) => ParseId<Bill>(id);
 
