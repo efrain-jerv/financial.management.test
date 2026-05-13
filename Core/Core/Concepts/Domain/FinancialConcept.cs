@@ -11,8 +11,8 @@
 using System;
 
 using Empiria.Json;
-using Empiria.Parties;
 using Empiria.StateEnums;
+using Empiria.Parties;
 
 using Empiria.Financial.Concepts.Data;
 
@@ -110,13 +110,6 @@ namespace Empiria.Financial.Concepts {
     }
 
 
-    public string Keywords {
-      get {
-        return $"{ConceptNo} " + EmpiriaString.BuildKeywords(Name, Description, Parent.FullName, Group.Name);
-      }
-    }
-
-
     [DataField("CPT_POSITION")]
     public int Position {
       get; private set;
@@ -171,6 +164,13 @@ namespace Empiria.Financial.Concepts {
       get; private set;
     }
 
+
+    public string Keywords {
+      get {
+        return $"{ConceptNo} " + EmpiriaString.BuildKeywords(Name, Description, Parent.FullName, Group.Name);
+      }
+    }
+    
 
     public int Level {
       get {
