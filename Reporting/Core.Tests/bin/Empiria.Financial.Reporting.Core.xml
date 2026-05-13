@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Financial.Reporting.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Budgeting.Reporting.BudgetExplorerResultBuilder">
+            <summary>Builds an Excel file with the results of a budget explorer request.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Reporting.BudgetGroupedEntriesToExcelBuilder">
+            <summary>Builds an Excel file with budget transaction entries grouped by year.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Reporting.BudgetRequestVoucherBuilder">
+            <summary>Builds a PDF file with a budget request transaction with its associated order data.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Reporting.BudgetTransactionByYearVoucherBuilder">
+            <summary>Builds a PDF file with a voucher for a budget transaction with year months in columns.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Reporting.BudgetUngroupedEntriesToExcelBuilder">
+            <summary>Builds an Excel file with ungrouped budget transaction entries.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Reporting.BudgetTransactionReportingService">
+            <summary>Provides services used to generate budget transactions reports.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Reporting.CashAccountsAnalysisToExcelBuilder">
+            <summary>Builds an Excel file with cash ledger accounts analysis.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Reporting.CashEntriesToExcelBuilder">
+            <summary>Builds an Excel file with cash ledger transaction entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Reporting.CashFlowExplorerToExcelBuilder">
+            <summary>Builds an Excel file with cash flow explorer results.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Reporting.CashTransactionToExcelBuilder">
+            <summary>Builds an Excel file with cash ledger transactions and their entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Reporting.CashTransactionTotalsToExcelBuilder">
+            <summary>Builds an Excel file with cash ledger transactions totals.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Reporting.CashTransactionVoucherBuilder">
+            <summary>Builds a Pdf file with a voucher for a cash transaction.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Reporting.ConceptsAnalyticsToExcelBuilder">
+            <summary>Builds an Excel file containing concepts analytics by account report.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Reporting.CashFlowReportingService">
+            <summary>Provides services used to generate cash flow reports.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Reporting.CashTransactionReportingService">
+            <summary>Provides services used to generate cash transactions reports.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Reporting.PaymentOrdersToExcelBuilder">
+            <summary>Builds an Excel file with payment order entries.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Reporting.PaymentsReportingService">
+            <summary>Provides services used to generate payments reports.</summary>
+        </member>
+    </members>
+</doc>

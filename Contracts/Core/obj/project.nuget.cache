@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8cY8IMosXDM=",
+  "success": true,
+  "projectFilePath": "E:\\empiria\\financial.management\\Contracts\\Core\\Empiria.Contracts.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jErV\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

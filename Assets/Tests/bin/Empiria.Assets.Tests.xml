@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Assets.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Tests.Assets.FixedAssetTests">
+            <summary>Unit tests for FixedAsset instances.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Assets.FixedAssetTypeTests">
+            <summary>Unit tests for FixedAssetType instances.</summary>
+        </member>
+    </members>
+</doc>

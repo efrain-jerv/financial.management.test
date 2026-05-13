@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Budgeting.Transactions</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetAccountsQuery">
+            <summary>Input query DTO used to retrieve budget available accounts.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetEntriesByYearTableDto">
+            <summary>Dynamic table output DTO with budget entries information.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetEntryByYearDynamicDto">
+            <summary>Dynamic fields DTO that holds a year budget entry with months in columns.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetEntryByYearDto">
+            <summary>Output DTO used to return budget entries for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetMonthEntryDto">
+            <summary>Output DTO used to return a budget month entry.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetEntryByYearMapper">
+            <summary>Maps budget transaction entries with values for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetEntryDto">
+            <summary>Output DTO used for budget entries.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetEntryDescriptorDto">
+            <summary>Output DTO used to display budget entries in a list.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetEntryDtoType">
+            <summary>Describes a budget entry type.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetEntryMapper">
+            <summary>Maps BudgetEntry instances to data transfer objects.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetTransactionHolderDto">
+            <summary>Output holder DTO used for a budget transaction.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetTransactionActions">
+            <summary>Action flags for budget transactions.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetTransactionDto">
+            <summary>Output DTO used for budget transactions.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetTransactionDescriptorDto">
+            <summary>Output DTO used to display budget transactions in lists.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.TaxEntryDto">
+            <summary>Output DTO used for tax entries in budget transactions.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetTransactionMapper">
+            <summary>Maps BudgetTransaction instances to data transfer objects.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetTransactionsQuery">
+            <summary>Input query DTO used to retrieve budget transactions.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetTransactionsQueryExtensions">
+            <summary>Extension methods for BudgetTransactionsQuery interface adapter.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetTypeForEditionDto">
+            <summary>Output DTO used to return budget types for transactions edition.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.BudgetForEditionDto">
+            <summary>Output DTO used to return budgets for transactions edition.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.TransactionTypeForEditionDto">
+            <summary>Output DTO used to return budgets transaction types for edition.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Adapters.TransactionTypeEntriesRulesDto">
+            <summary>Output DTO used to return a budget transaction entries's rule.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.Data.BudgetTransactionDataService">
+            <summary>Provides data access services for budget transactions.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BalanceColumn">
+            <summary>Represents a column balance that holds deposits or withdrawals for a budget entry.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetEntry">
+            <summary>An entry in a budget transaction.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetEntryByYear">
+            <summary>Holds a budget transaction entry with values for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetEntryByYearFields">
+            <summary>Input fields used to create and update a budget entries for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetMonthEntryFields">
+            <summary>Input fields used to create and update a budget entry amounts for a month.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetEntryByYearFieldsExtensions">
+            <summary>Extension methods for BudgetEntryByYearFields type.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetMonthEntryFieldsExtensions">
+            <summary>Extension methods for BudgetMonthEntryFields type.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetEntryFields">
+            <summary>Input fields used to create and update budget entries.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetEntryFieldsExtensions">
+            <summary>Extension methods for BudgetEntryFields type.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetOperationType">
+            <summary>Enumerates the operation type for a BudgetTransactionType.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetTotalByYear">
+            <summary>Holds a budget transaction entry with values for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetTransaction">
+            <summary>Partitioned type that represents a budget transaction with its entries.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetTransactionByYear">
+            <summary>Represents a budget transaction with its entries and amounts grouped for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetTransactionFields">
+            <summary>Input fields DTO used to create and update budget transactions.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetTransactionFieldsExtension">
+            <summary>Extension methods for BudgetTransactionFields class.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetTransactionRules">
+            <summary>Provides services to control budget transaction's rules.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetTransactionsGenerator">
+            <summary>Provides services to generate budget transactions automatically.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.BudgetTransactionType">
+            <summary>Power type that describes a budget transaction.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.UseCases.BudgetEntryByYearEditionUseCases">
+            <summary>Use cases used to edit budget transactions entries by a whole year.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.UseCases.BudgetTransactionEditionUseCases">
+            <summary>Use cases used to edit budget transactions.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Transactions.UseCases.BudgetTransactionUseCases">
+            <summary>Use cases used to retrieve budget transactions.</summary>
+        </member>
+    </members>
+</doc>

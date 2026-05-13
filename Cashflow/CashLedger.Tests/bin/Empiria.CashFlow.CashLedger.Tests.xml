@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.CashFlow.CashLedger.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Tests.CashFlow.CashLedger.CashTransactionProcessorTests">
+            <summary>Unit tests for CashTransactionProcessor services.</summary>
+        </member>
+        <member name="T:Empiria.Tests.CashFlow.CashLedger.CashTransactionUseCasesTests">
+            <summary>Unit tests for CashTransactionUseCases services.</summary>
+        </member>
+    </members>
+</doc>

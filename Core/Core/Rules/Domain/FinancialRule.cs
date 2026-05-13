@@ -1,0 +1,206 @@
+﻿/* Empiria Financial *****************************************************************************************
+*                                                                                                            *
+*  Module   : Financial Rules                            Component : Domain Layer                            *
+*  Assembly : Empiria.Financial.Core.dll                 Pattern   : Information Holder                      *
+*  Type     : FinancialRule                              License   : Please read LICENSE.txt file            *
+*                                                                                                            *
+*  Summary  : Represents a financial rule.                                                                   *
+*                                                                                                            *
+************************* Copyright(c) La Vía Óntica SC, Ontica LLC and contributors. All rights reserved. **/
+
+using System;
+
+using Empiria.Json;
+using Empiria.Ontology;
+using Empiria.Parties;
+using Empiria.StateEnums;
+
+using Empiria.Financial.Rules.Data;
+
+namespace Empiria.Financial.Rules {
+
+  /// <summary>Represents a financial rule.</summary>
+  [PartitionedType(typeof(FinancialRuleType))]
+  public class FinancialRule : BaseObject {
+
+    #region Constructors and parsers
+
+    protected FinancialRule(FinancialRuleType powertype) : base(powertype) {
+      // Required by Empiria Framework
+    }
+
+    internal FinancialRule(FinancialRuleCategory category) : base(category.FinancialRuleType) {
+      Category = category;
+      StartDate = DateTime.Today;
+      EndDate = ExecutionServer.DateMaxValue;
+    }
+
+    static public FinancialRule Parse(int id) => ParseId<FinancialRule>(id);
+
+    static public FinancialRule Parse(string uid) => ParseKey<FinancialRule>(uid);
+
+    static public FinancialRule Empty => ParseEmpty<FinancialRule>();
+
+    #endregion Constructors and parsers
+
+    #region Properties
+
+    public FinancialRuleType FinancialRuleType {
+      get {
+        return (FinancialRuleType) base.GetEmpiriaType();
+      }
+    }
+
+
+    [DataField("RULE_DESCRIPTION")]
+    public string Description {
+      get; private set;
+    }
+
+
+    [DataField("RULE_CATEGORY_ID")]
+    public FinancialRuleCategory Category {
+      get; private set;
+    }
+
+
+    [DataField("RULE_GROUP_ID")]
+    public int GroupId {
+      get; private set;
+    }
+
+
+    [DataField("RULE_DEBIT_ACCOUNT")]
+    public string DebitAccount {
+      get; private set;
+    }
+
+
+    [DataField("RULE_DEBIT_CURRENCY_ID")]
+    public Currency DebitCurrency {
+      get; private set;
+    }
+
+
+    [DataField("RULE_CREDIT_ACCOUNT")]
+    public string CreditAccount {
+      get; private set;
+    }
+
+
+    [DataField("RULE_CREDIT_CURRENCY_ID")]
+    public Currency CreditCurrency {
+      get; private set;
+    }
+
+
+    [DataField("RULE_DEBIT_CONCEPT")]
+    public string DebitConcept {
+      get; private set;
+    }
+
+
+    [DataField("RULE_CREDIT_CONCEPT")]
+    public string CreditConcept {
+      get; private set;
+    }
+
+
+    [DataField("RULE_CONDITIONS")]
+    public JsonObject Conditions {
+      get; private set;
+    }
+
+
+    [DataField("RULE_EXCEPTIONS")]
+    public JsonObject Exceptions {
+      get; private set;
+    }
+
+
+    [DataField("RULE_EXT_DATA")]
+    public JsonObject ExtData {
+      get; private set;
+    }
+
+
+    public string Keywords {
+      get {
+        return EmpiriaString.BuildKeywords(Description, DebitAccount, CreditAccount,
+                                           DebitConcept, CreditConcept,
+                                           Category.Keywords, FinancialRuleType.DisplayName);
+      }
+    }
+
+
+    [DataField("RULE_START_DATE")]
+    public DateTime StartDate {
+      get; private set;
+    }
+
+
+    [DataField("RULE_END_DATE")]
+    public DateTime EndDate {
+      get; private set;
+    }
+
+
+    [DataField("RULE_POSTED_BY_ID")]
+    public Party PostedBy {
+      get; private set;
+    }
+
+
+    [DataField("RULE_POSTING_TIME")]
+    public DateTime PostingTime {
+      get; private set;
+    }
+
+
+    [DataField("RULE_STATUS", Default = EntityStatus.Active)]
+    public EntityStatus Status {
+      get; private set;
+    }
+
+    #endregion Properties
+
+    #region Methods
+
+    internal void Delete() {
+      Status = EntityStatus.Deleted;
+      EndDate = DateTime.Today;
+
+      MarkAsDirty();
+    }
+
+
+    protected override void OnSave() {
+      if (this.IsNew) {
+        PostedBy = Party.ParseWithContact(ExecutionServer.CurrentContact);
+        PostingTime = DateTime.Now;
+        Status = EntityStatus.Active;
+      }
+
+      FinancialRulesData.WriteFinancialRule(this);
+    }
+
+
+    internal void Update(FinancialRuleFields fields) {
+      Assertion.Require(fields, nameof(fields));
+
+      DebitAccount = EmpiriaString.Clean(fields.DebitAccount);
+      CreditAccount = EmpiriaString.Clean(fields.CreditAccount);
+      DebitConcept = EmpiriaString.Clean(fields.DebitConcept);
+      CreditConcept = EmpiriaString.Clean(fields.CreditConcept);
+      Description = EmpiriaString.Clean(fields.Description);
+      StartDate = Patcher.Patch(fields.StartDate, StartDate);
+      EndDate = Patcher.Patch(fields.EndDate, ExecutionServer.DateMaxValue);
+
+      MarkAsDirty();
+    }
+
+    #endregion Methods
+
+  } // class FinancialRule
+
+} // namespace Empiria.Financial.Rules

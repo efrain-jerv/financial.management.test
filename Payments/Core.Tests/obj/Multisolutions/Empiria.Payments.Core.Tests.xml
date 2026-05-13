@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Payments.Core.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Tests.Payments.TestingConstants">
+            <summary>Provides testing constants for Empiria Payments Management System Core module.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Payments.PaymentAccountTests">
+            <summary>Unit tests for PaymentAccount instances.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Payments.PaymentMethodTests">
+            <summary>Unit tests for PaymentMethod instances.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Payments.PaymentOrderUseCasesTests">
+            <summary>Test cases for payment order use cases.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Payments.PaymentServiceTests">
+            <summary>Unit tests for payment services.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Payments.PaymentsTimeWindowTests">
+            <summary>Test cases for PaymentsTimeWindow type.</summary>
+        </member>
+    </members>
+</doc>

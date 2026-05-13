@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Orders.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Orders.Adapters.OrderHolderDto">
+            <summary>Abstract data transfer objects used to return orders information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.OrderDto">
+            <summary>Data transfer object used to return orders information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.OrderDescriptor">
+            <summary>Output Dto used to return minimal order data.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.OrderItemDto">
+            <summary>Abstract DTO used to return OrderItem abstract type data.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.OrdersQuery">
+            <summary>Query data transfer object used to search orders.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.OrdersQueryExtensions">
+            <summary>Extension methods for OrdersQuery type.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.OrderTaxEntryDto">
+            <summary>Data transfer object representing an order tax entry.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.OrderTaxMapper">
+            <summary>Maps order tax entries between domain and dto objects.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.PayableOrderHolderDto">
+            <summary>Data transfer object used to return complete payable orders information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.PayableOrderDto">
+            <summary>Data transfer object used to return payable orders information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.PayableOrderItemDto">
+            <summary>Data transfer object used to return payable order items.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.PayableOrderMapper">
+            <summary>Maps payable orders and their order items to their corresponding DTOs.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.RequisitionHolderDto">
+            <summary>Data transfer object used to return requisitions.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.RequisitionDto">
+            <summary>Data transfer object used to return requisition information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.RequisitionDescriptor">
+            <summary>Output Dto used to return minimal requisition data.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.RequisitionMapper">
+            <summary>Maps requisitions to their corresponding DTOs.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Data.OrdersData">
+            <summary>Provides data read and write methods for order and order item instances.</summary>
+        </member>
+        <member name="T:Empiria.Orders.ExpensesType">
+            <summary>Holds information about an expense category including its operating rules.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Order">
+            <summary>Represents an abstract order.</summary>
+        </member>
+        <member name="T:Empiria.Orders.OrderCategory">
+            <summary>Represents an order category which holds orders of the same kind or order type.</summary>
+        </member>
+        <member name="T:Empiria.Orders.OrderItem">
+            <summary>Abstract partitioned type that represents an order item.</summary>
+        </member>
+        <member name="T:Empiria.Orders.OrderItemFields">
+            <summary>Abstract DTO fields structure used for update order items information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.OrderItems">
+            <summary>Collection of taxes for an order.</summary>
+        </member>
+        <member name="T:Empiria.Orders.OrderItemType">
+            <summary>Power type that describes an order item.</summary>
+        </member>
+        <member name="T:Empiria.Orders.OrderRules">
+            <summary>Provides services to control order's rules.</summary>
+        </member>
+        <member name="T:Empiria.Orders.OrderTaxEntry">
+            <summary>Represents a tax applied to an order.</summary>
+        </member>
+        <member name="T:Empiria.Orders.OrderTaxEntryFields">
+            <summary>Input fields used to add or update an order tax entry.</summary>
+        </member>
+        <member name="T:Empiria.Orders.OrderTaxes">
+            <summary>Collection of taxes for an order.</summary>
+        </member>
+        <member name="T:Empiria.Orders.OrderType">
+            <summary>Power type that describes an order.</summary>
+        </member>
+        <member name="T:Empiria.Orders.PayableOrder">
+            <summary>Represents a payable order.</summary>
+        </member>
+        <member name="T:Empiria.Orders.PayableOrderFields">
+            <summary>Input fields DTO used to update payable orders information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.PayableOrderItem">
+            <summary>Represents a payable order item.</summary>
+        </member>
+        <member name="T:Empiria.Orders.PayableOrderItemFields">
+            <summary>DTO fields structure used for update payable order items.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Requisition">
+            <summary>Represents a requisition of good and services. A requisition is an aggregate of orders.</summary>
+        </member>
+        <member name="T:Empiria.Orders.RequisitionFields">
+            <summary>Input fields DTO used to update requisitions.</summary>
+        </member>
+        <member name="T:Empiria.Orders.UseCases.OrderTaxesUseCases">
+            <summary>Use cases used return and update order taxes information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.UseCases.OrderTypeUseCases">
+            <summary>Use cases used return order types information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.UseCases.PayableOrderUseCases">
+            <summary>Use cases used to update and return payable orders.</summary>
+        </member>
+        <member name="T:Empiria.Orders.UseCases.RequisitionUseCases">
+            <summary>Use cases used to update and return requisitions.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,20 @@
+﻿{
+  "appName": "Empiria Cashflow Management System Core Tests",
+  "description": "Domain types, classes and services variables values",
+  "version": "1.0",
+  "date": "2024-03-08",
+  "variables": [
+    {
+      "key": "{{APPLICATION-KEY}}",
+      "value": "dev_PYC_Backend_pA37AlHhLdo3Lq5SdgXQ158raxwcWyV5VRiQ"
+    },
+    {
+      "key": "{{GLOBAL-CONFIGURATION-FILE}}",
+      "value": "E:\\empiria.files\\config.data\\empiria.pyc.development.json"
+    },
+    {
+      "key": "{{TESTS_SESSION_TOKEN}}",
+      "value": "ad11738297ba87f94e381ee902cf183bfd322df4acf54518f9dbaada93d009489dc1f5a3b3dc4f77c141ee49ffee34c4b0ad27c58d9d1e8fb81a196e350af4c17ac79ac0-2aca-4481-80a2-0f7e36e36012"
+    }
+  ]
+}

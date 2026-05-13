@@ -1,0 +1,16 @@
+E:\empiria\financial.management\Integration\bin\Empiria.Financial.Integration.dll
+E:\empiria\financial.management\Integration\bin\Empiria.Financial.Integration.pdb
+E:\empiria\financial.management\Integration\bin\Empiria.Financial.Integration.xml
+E:\empiria\financial.management\Integration\bin\Newtonsoft.Json.dll
+E:\empiria\financial.management\Integration\bin\Empiria.Core.dll
+E:\empiria\financial.management\Integration\bin\Empiria.Core.pdb
+E:\empiria\financial.management\Integration\obj\Multisolutions\Empiria.Financial.Integration.csproj.AssemblyReference.cache
+E:\empiria\financial.management\Integration\obj\Multisolutions\Empiria.Financial.Integration.GeneratedMSBuildEditorConfig.editorconfig
+E:\empiria\financial.management\Integration\obj\Multisolutions\Empiria.Financial.Integration.AssemblyInfoInputs.cache
+E:\empiria\financial.management\Integration\obj\Multisolutions\Empiria.Financial.Integration.AssemblyInfo.cs
+E:\empiria\financial.management\Integration\obj\Multisolutions\Empiria.Financial.Integration.csproj.CoreCompileInputs.cache
+E:\empiria\financial.management\Integration\obj\Multisolutions\Empiria.Financial.Integration.sourcelink.json
+E:\empiria\financial.management\Integration\obj\Multisolutions\Empiria..2D1D0C77.Up2Date
+E:\empiria\financial.management\Integration\obj\Multisolutions\Empiria.Financial.Integration.dll
+E:\empiria\financial.management\Integration\obj\Multisolutions\Empiria.Financial.Integration.xml
+E:\empiria\financial.management\Integration\obj\Multisolutions\Empiria.Financial.Integration.pdb

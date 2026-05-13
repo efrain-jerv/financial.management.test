@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Financial.Integration.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.BaseCashEntryDto">
+            <summary>Output DTO used to retrieve cash ledger transaction entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.BaseCashLedgerQuery">
+            <summary>Input query DTO used to retrieve cash ledger transactions.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashAccountStatus">
+            <summary>Enumerates the cash account status in a cash ledger transaction entry.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashAccountStatusExtensionMethods">
+            <summary>Extension methods for CashAccountStatus type.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashAccountTotalDto">
+            <summary>Output DTO for a cash account with totals.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashEntryExtendedDto">
+            <summary>Output DTO used to retrieve cash ledger entries with transaction information.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashEntryFields">
+            <summary>Input fields used to update cash ledger transaction entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashTransactionDescriptor">
+            <summary>Output DTO used to retrieve cash ledger transactions for use in lists.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.RecordsSearchQuery">
+            <summary>Input query DTO used to search cash flow related data and entities.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.ICreditAccountData">
+            <summary>Interface with credit account data coming from external systems.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.ICreditAccountService">
+            <summary>Interface used to retrieve credit accounts data from external systems.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.ICreditEntryData">
+            <summary>Interface for a credit account entry used to connect with external systems.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.ICreditSicData">
+            <summary>Interface with credit data coming from external systems.</summary>
+        </member>
+        <member name="T:Empiria.Financial.ExternalCreditSystemServices">
+            <summary>Provides services from external credit systems.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Integration.IntegrationLibrary">
+            <summary>Static library with general purpose methods.</summary>
+        </member>
+    </members>
+</doc>

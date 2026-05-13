@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Banobras.PYC.ExternalInterfaces</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Banobras.Budgeting.Adapters.BudgetingTransactionDto">
+            <summary>DTO with budgeting transaction data.</summary>
+        </member>
+        <member name="T:Empiria.Banobras.Budgeting.BudgetTransactionImporter">
+            <summary>Service provider used to import budget transactions from Excel files.</summary>
+        </member>
+        <member name="T:Empiria.Banobras.Budgeting.ExcelBudgetEntry">
+            <summary>Holds buget entry data extracted from an Excel file row accoring to Banobras layout.</summary>
+        </member>
+        <member name="T:Empiria.Banobras.Budgeting.ImportBudgetTransactionCommand">
+            <summary>Command data used to import budget transactions.</summary>
+        </member>
+        <member name="T:Empiria.Banobras.Budgeting.Services.BudgetingServices">
+            <summary>Provides Banobras budgeting-related services.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.Adapters.IkosCashMapper">
+            <summary>Mapper service for IkosCash payment services.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.Adapters.OrganizationUnitDto">
+            <summary>Data structure.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.Adapters.PaymentDto">
+            <summary>Data structure with payment order data returned by an payment service provider.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.Adapters.IkosStatusRequest">
+            <summary>DTO used to get IKOS payment instruction status.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.Adapters.PaymentStatusResultDto">
+            <summary>Dto to read payment status.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.Adapters.IkosCashInstructionResult">
+            <summary>DTO that holds an IkosCash payment instruction result.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.CertificateServices">
+            <summary>Provides X509Certificate-related services.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.IkosCashCancelTransactionPayload">
+            <summary>DTO used to cancel IkosCash payment instructions.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.IkosCashCancelTransactionResult">
+            <summary>DTO that holds the result of an IkosCash transaction cancelation.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.IkosCashConstantValues">
+            <summary>Provides constants values for Ikos Cash conector component.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.IkosCashPaymentsApiClient">
+            <summary>Client to consume Ikos cash web services.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.IkosCashTokenApiClient">
+            <summary>Client to get token from Ikos cash web services.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.IkosCashTransactionPayload">
+            <summary>Payload structure used to request IkosCash payments through web services.</summary>
+        </member>
+        <member name="T:Empiria.Payments.BanobrasIntegration.IkosCash.IkosCashPaymentService">
+            <summary>Implements IPaymentService interface using IkosCash messages services.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.Adapters.SialDetailDto">
+            <summary>Output DTO used to return SIAL payroll data detail</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.Adapters.SialDetailEntryDto">
+            <summary>Output DTO used to return SIAL payroll movements entry data</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.Adapters.SialEmployeeDto">
+            <summary>Output DTO used to return a SIAL employee.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.Adapters.SialHeaderEntryDto">
+            <summary>Output DTO used to return SIAL payroll entry data</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.Adapters.SialMapper">
+            <summary>Mapping services for SIAL payrolls.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.Adapters.SialPayrollDto">
+            <summary>Output DTO used to return SIAL payroll.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.Adapters.SialPayrollsQuery">
+            <summary>Input query used to search SIAL payrolls.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.Adapters.SialPayrollsQueryExtensions">
+            <summary>Extension methods for SialPayrollsQuery.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.Data.SialDataService">
+            <summary>Provides data access for SIAL payroll data.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.AreaSIAL">
+            <summary>Contiene información sobre un área organizacional en el sistema SIAL de Banobras.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.EmpleadoSIAL">
+            <summary>Holds information about a Banobras Sial employee entry.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.EntradaNominaSIAL">
+            <summary>Contiene información sobre un registro de nómina en SIAL.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.NominaSIAL">
+            <summary>Representa una nómina en el sistema SIAL de Banobras.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.SialPayrollToExcelBuilder">
+            <summary>Exports a SIAL payroll to an Excel file according to Banobras budget transaction layout.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sial.Services.SialServices">
+            <summary>Implements Banobras SIAL System services.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sic.Adapters.SicCreditAccountDto">
+            <summary>Output DTO used to return SIC credit account data
+            according to ICreditAccountData interface.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sic.Adapters.SicCreditDto">
+            <summary>Output DTO used to return SIC credit account data
+            according to ICreditSicData interface.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sic.Adapters.SicCreditEntryDto">
+            <summary>Output DTO for SIC credit entry data according to ICreditEntryData interface.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sic.Adapters.SicMapper">
+            <summary>Mapper service for SIC credits.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sic.Data.SicCreditDataService">
+            <summary>Provides data access for SIC credits.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sic.SicApiClient">
+            <summary>Client to consume sic web services.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sic.SicConstantValues">
+            <summary>Provides constants values for sic conector component.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sic.SicCredit">
+            <summary>Holds credit account information from Banobras SIC System.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sic.SicCreditEntry">
+            <summary>Holds information about a Banobras SIC credit entry.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sic.SicServices">
+            <summary>Implements ICreditAccountService interface using Banobras SIC System services.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sigevi.Adapters.PresupuestoDisponibleDto">
+            <summary>Returns available budget information for one or more budget accounts.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sigevi.Adapters.SolicitarSuficienciaFields">
+            <summary>Input fields DTO to request budget for one or more accounts.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sigevi.Adapters.SolicitarSuficienciaFieldsExtensions">
+            <summary>Extension methods for SolicitarSuficienciaFields.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sigevi.Adapters.SolicitudPagoFields">
+            <summary>Input fields DTO used to request advance payments for travel expenses.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sigevi.Adapters.SolicitudSuficienciaDto">
+            <summary>Returns external budget request information for one or more budget accounts.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sigevi.Adapters.ValidarPagoFields">
+            <summary>Input fields DTO used to validate SIGEVI requested payment orders.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sigevi.SigeviUtilities">
+            <summary>Utility services for SIGEVI integration.</summary>
+        </member>
+        <member name="T:Empiria.BanobrasIntegration.Sigevi.Services.SigeviIntegrationServices">
+            <summary>Provides integration services to Banobras' SIGEVI System.</summary>
+        </member>
+    </members>
+</doc>

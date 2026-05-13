@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.CashFlow.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowPlanDto">
+            <summary>Output DTO for cash flow plan information</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowPlanMapper">
+            <summary>Maps CashFlowPlan instances to data transfer objects.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionAccountDto">
+            <summary>Output DTO used to return cash flow projection accounts.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionHolderDto">
+            <summary>Output holder DTO used for a cash flow projection.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionActions">
+            <summary>Action flags for cash flow projections.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionDto">
+            <summary>Output DTO used for cash flow projections.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionDescriptorDto">
+            <summary>Output DTO used to display cash flow projections in lists.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionEntriesByYearTableDto">
+            <summary>Dynamic table output DTO with cash flow projection's entries grouped by year.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionEntryByYearDynamicDto">
+            <summary>Dynamic fields DTO that holds a yearly cash flow projection entry with months in columns.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionEntryByYearDto">
+            <summary>Output DTO used to return cash flow projection's entries for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionMonthEntryDto">
+            <summary>Output DTO used to return a cash flow projection month entry.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionEntryByYearMapper">
+            <summary>Maps cash flow projection's entries with values for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionEntryDto">
+            <summary>Output DTO used to return cash flow projection entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionEntryDescriptor">
+            <summary>Output DTO used to return cash flow projection's entries for lists.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionEntryDtoType">
+            <summary>Describes a cash flow projection entry type.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionEntryMapper">
+            <summary>Maps CashFlowProjectionEntry instances to data transfer objects.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionMapper">
+            <summary>Maps CashFlowProjection instances to data transfer objects.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionsQuery">
+            <summary>Input query DTO used to retrieve cash flow projections.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.CashFlowProjectionsQueryExtensions">
+            <summary>Extension methods for CashFlowProjectionsQuery interface adapter.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.StructureForEditCashFlowProjections">
+            <summary>Output DTO used to return structured data for cash flow projections edition.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.ProjectionTypeForEditionDto">
+            <summary>Output DTO used to return project categories for cash flow projections edition.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.ProjectTypeForEditionDto">
+            <summary>Output DTO used to return project types for cash flow projections edition.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.ProjectionProjectForEdition">
+            <summary>Output DTO used to return financial projects for cash flow projections edition.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Adapters.StructureForEditCashFlowProjectionsMapper">
+            <summary>Maps structured data used for cash flow projections edition.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.Data.CashFlowProjectionDataService">
+            <summary>Provides data access services for cash flow projections.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowPlan">
+            <summary>Represents a cash flow plan that is an aggregate root for cash flow projections.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjection">
+            <summary>Partitioned type that represents a cash flow projection with its entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionByYear">
+            <summary>Represents a cash flow projection with its entries and amounts grouped for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionCategory">
+            <summary>Represents a cash flow projection category that serves to
+            classify CashFlowProjectionTypes.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionColumn">
+            <summary>Represents a column balance that holds inflows or outflows
+            for a cash flow projection entry.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionEntry">
+            <summary>An entry in a cash flow projection.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionEntryByYear">
+            <summary>Holds a cash flow proyection entry with values for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionEntryByYearFields">
+            <summary>Input fields used to create and update a cash flow
+            projection's account for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionEntryByYearFieldsExtensions">
+            <summary>Extension methods for CashFlowProjectionEntryByYearFields type.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionMonthEntryFields">
+            <summary>Input fields used to create and update a cash flow projection entry amount for a month.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionMonthEntryFieldsExtensions">
+            <summary>Extension methods for CashFlowProjectionMonthEntryFields type.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionEntryFields">
+            <summary>Input fields DTO for cash flow projections entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionEntryFieldsExtensions">
+            <summary>Extension methods for CashFlowProjectionEntryFields type.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionFields">
+            <summary>Input fields DTO used to create and update cash flow projections.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionFieldsExtensions">
+            <summary>Extension methods for CashFlowProjectionFields type.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionRules">
+            <summary>Provides services to control cash flow projection's rules.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionTotalByYear">
+            <summary>Holds a cash flow calculated projection entry with total values for a whole year.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.CashFlowProjectionType">
+            <summary>Power type that describes a cash flow projection.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.UseCases.CashFlowPlanUseCases">
+            <summary>Use cases used to retrieve cash flow plans.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.UseCases.CashFlowProjectionEntriesUseCases">
+            <summary>Use cases used to retrieve and update cash flow projections entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Projections.UseCases.CashFlowProjectionUseCases">
+            <summary>Use cases used to retrieve cash flow projections.</summary>
+        </member>
+    </members>
+</doc>

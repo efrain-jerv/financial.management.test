@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Assets.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Assets.Adapters.FixedAssetDto">
+            <summary>Data transfer object used to return fixed asset data.</summary>
+        </member>
+        <member name="T:Empiria.Assets.Adapters.FixedAssetDescriptor">
+            <summary>Output Dto used to return minimal data for a fixed asset.</summary>
+        </member>
+        <member name="T:Empiria.Assets.Adapters.FixedAssetMapper">
+            <summary>Provides data mapping services for FixedAsset instances.</summary>
+        </member>
+        <member name="T:Empiria.Assets.Adapters.FixedAssetsQuery">
+            <summary>Query data transfer object used to search fixed assets.</summary>
+        </member>
+        <member name="T:Empiria.Assets.Adapters.FixedAssetsQueryExtensions">
+            <summary>Extension methods for FixedAssetsQuery type.</summary>
+        </member>
+        <member name="T:Empiria.Assets.Data.FixedAssetsData">
+            <summary>Provides data read and write methods for fixed asset instances.</summary>
+        </member>
+        <member name="T:Empiria.Assets.FixedAsset">
+            <summary>Represents a fixed asset.</summary>
+        </member>
+        <member name="T:Empiria.Assets.FixedAssetType">
+            <summary>Represents a fixed asset type.</summary>
+        </member>
+        <member name="T:Empiria.Assets.UseCases.FixedAssetUseCases">
+            <summary>Use cases for fixed assets management.</summary>
+        </member>
+    </members>
+</doc>

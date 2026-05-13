@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Budgeting.Explorer</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Budgeting.Explorer.Adapters.AvailableBudgetQuery">
+            <summary>Input query for request available budget information.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.Adapters.BudgetReportType">
+            <summary>Enumeration values that describe budget reports.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.Adapters.BudgetExplorerQuery">
+            <summary>Input query DTO used to explore budget information.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.Adapters.BudgetExplorerQueryMapper">
+            <summary>Maps BudgetExplorerQuery DTO structures to BudgetExplorerCommand instances.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.Adapters.BudgetExplorerResultDto">
+            <summary>Dynamic columns output DTO with budget information.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.Adapters.BudgetExplorerResultMapper">
+            <summary>Maps a BudgetExplorerResult instance to its output DTO.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.Adapters.DynamicBudgetExplorerEntryDto">
+            <summary>Output DTO with budget explorer entry information.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.Data.BudgetExplorerDataService">
+            <summary>Provides data access services for the budget explorer.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.AvailableBudgetBuilder">
+            <summary>Builds available budget information.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.BudgetBreakdown">
+            <summary>Builds budget information for a budget account break down by months.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.BudgetDataInColumns">
+            <summary>Value type that holds budget data in columns.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.BudgetExplorer">
+            <summary>Retrieves budget information bases on a query returning a dynamic result data structure.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.BudgetExplorerCommand">
+            <summary>Command information used by the BudgetExplorer.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.BudgetExplorerResult">
+            <summary>Holds the dynamic result of a budget explorer execution.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Explorer.UseCases.BudgetExplorerUseCases">
+            <summary>Use cases for retrieve budget information.</summary>
+        </member>
+    </members>
+</doc>

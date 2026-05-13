@@ -1,0 +1,161 @@
+﻿/* Empiria Financial *****************************************************************************************
+*                                                                                                            *
+*  Module   : Integration services                       Component : Adapters Layer                          *
+*  Assembly : Empiria.Financial.Integration.Core.dll     Pattern   : Adaptation Interface                    *
+*  Type     : ICreditAccountData                         License   : Please read LICENSE.txt file            *
+*                                                                                                            *
+*  Summary  : Interface with credit account data coming from external systems.                               *
+*                                                                                                            *
+************************* Copyright(c) La Vía Óntica SC, Ontica LLC and contributors. All rights reserved. **/
+
+using System;
+
+using Empiria.Parties;
+
+namespace Empiria.Financial.Adapters {
+
+  /// <summary>Interface with credit account data coming from external systems.</summary>
+  public interface ICreditAccountData {
+
+    string CreditNo {
+      get;
+    }
+
+    string SubledgerAccountNo {
+      get;
+    }
+
+    string BaseInterestRate {
+      get;
+    }
+
+    string BaseMorInterestRate {
+      get;
+    }
+
+    string PreviousCredits {
+      get;
+    }
+
+    CreditProjectType CreditProjectType {
+      get;
+    }
+
+    Currency Currency {
+      get;
+    }
+
+    string FederalTaxPayersReg {
+      get;
+    }
+
+    int FederalTaxPayersRegNo {
+      get;
+    }
+
+    string CustomerType {
+      get;
+    }
+
+    string CustomerName {
+      get;
+    }
+
+
+    OrganizationalUnit OrganizationalUnit {
+      get;
+    }
+
+
+    string CreditType {
+      get;
+    }
+
+    string CreditStageId {
+      get;
+    }
+
+    string StandardAccount {
+      get;
+    }
+
+    string ExternalCreditNo {
+      get;
+    }
+
+    DateTime MaxAvailabilityDate {
+      get;
+    }
+
+    DateTime MaxRefinancingDate {
+      get;
+    }
+
+    string CreditLineNo {
+      get;
+    }
+
+    decimal NetFinancedAmount {
+      get;
+    }
+
+    string ConstructionBuilding {
+      get;
+    }
+
+    decimal ConstructionBuildingCost {
+      get;
+    }
+
+    decimal LoanAmount {
+      get;
+    }
+
+    decimal CurrentBalance {
+      get;
+    }
+
+    int InvestmentTerm {
+      get;
+    }
+
+    int DisbursementPeriod {
+      get;
+    }
+
+    DateTime DisbursementDate {
+      get;
+    }
+
+    int RepaymentTerm {
+      get;
+    }
+
+    DateTime RepaymentDate {
+      get;
+    }
+
+    int InterestRate {
+      get;
+    }
+
+    int InterestGracePeriod {
+      get;
+    }
+
+    decimal InterestRateFactor {
+      get;
+    }
+
+    decimal InterestRateFloor {
+      get;
+    }
+
+    decimal InterestRateCeiling {
+      get;
+    }
+
+
+  }  // interface ICreditAccountData
+
+} // namespace Empiria.Financial.Adapters

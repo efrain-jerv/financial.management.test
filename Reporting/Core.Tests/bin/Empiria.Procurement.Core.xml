@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Procurement.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractDto">
+            <summary>Data transfer object used to return contracts information.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractDescriptor">
+            Output Dto used to return minimal contract data
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractItemDto">
+            <summary>Data transfer object used to return contracts information.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractItemMapper">
+            <summary>Provides data mapping services for ContractItem instances.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractItemQuery">
+            <summary>Query data transfer object used to search contracts item.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractMapper">
+            <summary>Provides data mapping services for Contract instances.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractOrderHolderDto">
+            <summary>Data transfer object used to return complete contract supply orders information.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractOrderDto">
+            <summary>Data transfer object used to return a contract supply order.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractOrderDescriptor">
+            <summary>Output Dto used to return minimal contract supply order data.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractOrderItemDto">
+            <summary>Data transfer object used to return contract supply order items.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Adapters.ContractOrderMapper">
+            <summary>Provides data mapping services for procurement contract orders.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.Data.ContractOrdersData">
+            <summary>Provides data read and write methods for contract's supply orders.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.ContractFields">
+            <summary>Input fields DTO used for update contracts information.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.ContractItemFields">
+            <summary>DTO fields structure used for update contracts item information.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.ContractOrder">
+            <summary>Represents a contract's supply order.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.ContractOrderFields">
+            <summary>Input fields DTO used for update procurement contract's orders.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.ContractOrderItem">
+            <summary>Represents a contract supply order item.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.ContractOrderItemFields">
+            <summary>Input fields DTO used to update procurment contract's order items.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.UseCases.ContractOrderUseCases">
+            <summary>Use cases for contract supply orders.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Contracts.UseCases.ContractUseCases">
+            <summary>Use cases for contract management.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Orders.SalesOrder">
+            <summary>Represents a Sales order.</summary>  
+        </member>
+        <member name="T:Empiria.Procurement.Orders.SalesOrderItem">
+            <summary>Represents an abstract sales order item.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.Adapters.SubledgerAccountQuery">
+            <summary>Input query used to search suppliers subledger accounts.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.Adapters.SupplierHolderDto">
+            <summary>Holds full information for a supplier.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.Adapters.SupplierDto">
+            <summary>Output DTO with supplier data.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.Adapters.SupplierDescriptor">
+            <summary>Output DTO used to return minimal suppliers data to be used in lists.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.Adapters.SupplierMapper">
+            <summary>Maps suppliers to their DTOs.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.Adapters.SuppliersQuery">
+            <summary>Query DTO used to search suppliers.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.Adapters.SuppliersQueryExtensions">
+            <summary>Extension methods for SuppliersQuery type.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.Data.SuppliersData">
+            <summary>Provides data read and write methods for Supplier instances.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.Supplier">
+            <summary>Represents a supplier of goods or services.</summary>  
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.SupplierFields">
+            <summary>Input fields DTO used to create and update suppliers data.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.SupplierType">
+            <summary>Holds a static list of supplier types.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.UseCases.PaymentAccountsUseCases">
+            <summary>Use cases for payments accounts.</summary>
+        </member>
+        <member name="T:Empiria.Procurement.Suppliers.UseCases.SupplierUseCases">
+            <summary>Use cases for suppliers management.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.SalesOrderHolderDto">
+            <summary>Data transfer object used to return complete Sales orders information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.SalesOrderDto">
+            <summary>Data transfer object used to return Sales orders information.</summary>
+            
+        </member>
+        <member name="T:Empiria.Orders.Adapters.SalesOrderItemDto">
+            <summary>Abstract DTO used to return SalesOrderItem abstract type data.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Adapters.SalesOrderMapper">
+            <summary>Mapping methods for sales order.</summary>
+        </member>
+        <member name="T:Empiria.Orders.Data.SalesOrdersData">
+            <summary>Provides data read and write methods for order and order item instances.</summary>
+        </member>
+        <member name="T:Empiria.Orders.SalesOrderFields">
+            <summary>Input fields DTO used to update sales orders information.</summary>
+        </member>
+        <member name="T:Empiria.Orders.SalesOrderItemFields">
+            <summary>DTO fields structure used for update sales order items.</summary>
+        </member>
+        <member name="T:Empiria.Orders.SalesOrderType">
+            <summary>Describes inventory type.</summary>
+        </member>
+        <member name="T:Empiria.Orders.UseCases.SalesOrderUseCases">
+            <summary>Use cases used to update and return sales orders.</summary>
+        </member>
+    </members>
+</doc>

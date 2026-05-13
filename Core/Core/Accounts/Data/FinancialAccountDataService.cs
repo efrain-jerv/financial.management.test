@@ -1,0 +1,81 @@
+﻿/* Empiria Financial *****************************************************************************************
+*                                                                                                            *
+*  Module   : Account                                    Component : Data Layer                              *
+*  Assembly : Empiria.Financial.Management.Core.dll      Pattern   : Data Service                            *
+*  Type     : AccountDataService                         License   : Please read LICENSE.txt file            *
+*                                                                                                            *
+*  Summary  : Provides data access services for financial accounts.                                          *
+*                                                                                                            *
+************************* Copyright(c) La Vía Óntica SC, Ontica LLC and contributors. All rights reserved. **/
+
+using Empiria.Data;
+
+namespace Empiria.Financial.Data {
+
+  /// <summary>Provides data access services for financial accounts.</summary>
+  static internal class FinancialAccountDataService {
+
+    static internal void CleanAccount(FinancialAccount account) {
+      if (account.IsEmptyInstance) {
+        return;
+      }
+      var sql = "UPDATE FMS_ACCOUNTS " +
+                $"SET ACCT_UID = '{System.Guid.NewGuid().ToString()}', " +
+                $"ACCT_NUMBER = '{EmpiriaString.Clean(account.AccountNo)}', " +
+                $"ACCT_DESCRIPTION = '{EmpiriaString.Clean(account.Description).Replace("'", "''")}', " +
+                $"ACCT_KEYWORDS = '{account.Keywords}', " +
+                $"ACCT_SUBLEDGER_ACCT_NO = '{EmpiriaString.Clean(account.SubledgerAccountNo)}' " +
+                $"WHERE ACCT_ID = {account.Id}";
+
+      var op = DataOperation.Parse(sql);
+
+      DataWriter.Execute(op);
+    }
+
+
+    static internal FixedList<FinancialAccount> SearchAccounts(string filter) {
+
+      var sql = "SELECT * FROM FMS_ACCOUNTS ";
+
+      if (!string.IsNullOrWhiteSpace(filter)) {
+        sql += $" WHERE {filter}";
+      }
+
+      var op = DataOperation.Parse(sql);
+
+      return DataReader.GetFixedList<FinancialAccount>(op)
+                       .Sort(x => $"{x.OrganizationalUnit.Name.PadRight(384)}|{x.AccountNo.PadRight(64)}");
+    }
+
+
+    static internal FixedList<FinancialAccount> SearchAccountByKeywords(string keywords) {
+
+      var filter = SearchExpression.ParseAndLikeKeywords("ACCT_KEYWORDS", keywords);
+
+      if (filter.Length == 0) {
+        filter = SearchExpression.AllRecordsFilter;
+      }
+
+      var sql = "SELECT * FROM FMS_ACCOUNTS " +
+               $"WHERE {filter} AND " +
+               $"ACCT_STATUS <> 'X'";
+
+      var op = DataOperation.Parse(sql);
+
+      return DataReader.GetFixedList<FinancialAccount>(op);
+    }
+
+    static internal void WriteAccount(FinancialAccount o, string extensionData) {
+      var op = DataOperation.Parse("write_FMS_Account",
+         o.Id, o.UID, o.FinancialAccountType.Id, o.StandardAccount.Id, o.Organization.Id,
+         o.OrganizationalUnit.Id, o.Project.Id, o.LedgerId, o.Currency.Id, o.AccountNo, o.Description,
+         EmpiriaString.Tagging(o.Identifiers), EmpiriaString.Tagging(o.Tags), o.Attributes.ToJsonString(),
+         o.FinancialData.ToJsonString(), o.ConfigData.ToString(), extensionData, o.Keywords,
+         o.Parent.Id, o.StartDate, o.EndDate, o.Id, o.PostedBy.Id, o.PostingTime, (char) o.Status);
+
+      DataWriter.Execute(op);
+    }
+
+  }  // class AccountDataService
+
+}  // namespace Empiria.Financial.Data

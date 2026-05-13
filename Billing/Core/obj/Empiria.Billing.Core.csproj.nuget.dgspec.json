@@ -1,0 +1,550 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\empiria\\financial.management\\Billing\\Core\\Empiria.Billing.Core.csproj": {}
+  },
+  "projects": {
+    "E:\\empiria\\central\\Central.Services\\Empiria.Central.Services.csproj": {
+      "version": "8.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\empiria\\central\\Central.Services\\Empiria.Central.Services.csproj",
+        "projectName": "Empiria.Central.Services",
+        "projectPath": "E:\\empiria\\central\\Central.Services\\Empiria.Central.Services.csproj",
+        "packagesPath": "C:\\Users\\jErV\\.nuget\\packages\\",
+        "outputPath": "E:\\empiria\\central\\Central.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jErV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\empiria\\central\\Central\\Empiria.Central.csproj": {
+                "projectPath": "E:\\empiria\\central\\Central\\Empiria.Central.csproj"
+              },
+              "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj": {
+                "projectPath": "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\empiria\\central\\Central\\Empiria.Central.csproj": {
+      "version": "8.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\empiria\\central\\Central\\Empiria.Central.csproj",
+        "projectName": "Empiria.Central",
+        "projectPath": "E:\\empiria\\central\\Central\\Empiria.Central.csproj",
+        "packagesPath": "C:\\Users\\jErV\\.nuget\\packages\\",
+        "outputPath": "E:\\empiria\\central\\Central\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jErV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\empiria\\core\\Core\\Empiria.Core.csproj": {
+                "projectPath": "E:\\empiria\\core\\Core\\Empiria.Core.csproj"
+              },
+              "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj": {
+                "projectPath": "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\empiria\\core\\Core\\Empiria.Core.csproj": {
+      "version": "8.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\empiria\\core\\Core\\Empiria.Core.csproj",
+        "projectName": "Empiria.Core",
+        "projectPath": "E:\\empiria\\core\\Core\\Empiria.Core.csproj",
+        "packagesPath": "C:\\Users\\jErV\\.nuget\\packages\\",
+        "outputPath": "E:\\empiria\\core\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jErV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\empiria\\extensions\\DynamicData\\Empiria.DynamicData.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\empiria\\extensions\\DynamicData\\Empiria.DynamicData.csproj",
+        "projectName": "Empiria.DynamicData",
+        "projectPath": "E:\\empiria\\extensions\\DynamicData\\Empiria.DynamicData.csproj",
+        "packagesPath": "C:\\Users\\jErV\\.nuget\\packages\\",
+        "outputPath": "E:\\empiria\\extensions\\DynamicData\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jErV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\empiria\\core\\Core\\Empiria.Core.csproj": {
+                "projectPath": "E:\\empiria\\core\\Core\\Empiria.Core.csproj"
+              },
+              "E:\\empiria\\extensions\\Office\\Empiria.Office.csproj": {
+                "projectPath": "E:\\empiria\\extensions\\Office\\Empiria.Office.csproj"
+              },
+              "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj": {
+                "projectPath": "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\empiria\\extensions\\Office\\Empiria.Office.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\empiria\\extensions\\Office\\Empiria.Office.csproj",
+        "projectName": "Empiria.Office",
+        "projectPath": "E:\\empiria\\extensions\\Office\\Empiria.Office.csproj",
+        "packagesPath": "C:\\Users\\jErV\\.nuget\\packages\\",
+        "outputPath": "E:\\empiria\\extensions\\Office\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jErV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\empiria\\core\\Core\\Empiria.Core.csproj": {
+                "projectPath": "E:\\empiria\\core\\Core\\Empiria.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.11.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "SpreadsheetLight": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "System.IO.FileSystem.Primitives": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.IO.Packaging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[7.2.4, )"
+            },
+            "itext7.pdfhtml": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj",
+        "projectName": "Empiria.Services",
+        "projectPath": "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj",
+        "packagesPath": "C:\\Users\\jErV\\.nuget\\packages\\",
+        "outputPath": "E:\\empiria\\extensions\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jErV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\empiria\\core\\Core\\Empiria.Core.csproj": {
+                "projectPath": "E:\\empiria\\core\\Core\\Empiria.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\empiria\\financial.management\\Billing\\Core\\Empiria.Billing.Core.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\empiria\\financial.management\\Billing\\Core\\Empiria.Billing.Core.csproj",
+        "projectName": "Empiria.Billing.Core",
+        "projectPath": "E:\\empiria\\financial.management\\Billing\\Core\\Empiria.Billing.Core.csproj",
+        "packagesPath": "C:\\Users\\jErV\\.nuget\\packages\\",
+        "outputPath": "E:\\empiria\\financial.management\\Billing\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jErV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\empiria\\central\\Central.Services\\Empiria.Central.Services.csproj": {
+                "projectPath": "E:\\empiria\\central\\Central.Services\\Empiria.Central.Services.csproj"
+              },
+              "E:\\empiria\\core\\Core\\Empiria.Core.csproj": {
+                "projectPath": "E:\\empiria\\core\\Core\\Empiria.Core.csproj"
+              },
+              "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj": {
+                "projectPath": "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj"
+              },
+              "E:\\empiria\\financial.management\\Core\\Core\\Empiria.Financial.Core.csproj": {
+                "projectPath": "E:\\empiria\\financial.management\\Core\\Core\\Empiria.Financial.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\empiria\\financial.management\\Core\\Core\\Empiria.Financial.Core.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\empiria\\financial.management\\Core\\Core\\Empiria.Financial.Core.csproj",
+        "projectName": "Empiria.Financial.Core",
+        "projectPath": "E:\\empiria\\financial.management\\Core\\Core\\Empiria.Financial.Core.csproj",
+        "packagesPath": "C:\\Users\\jErV\\.nuget\\packages\\",
+        "outputPath": "E:\\empiria\\financial.management\\Core\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jErV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\empiria\\central\\Central\\Empiria.Central.csproj": {
+                "projectPath": "E:\\empiria\\central\\Central\\Empiria.Central.csproj"
+              },
+              "E:\\empiria\\extensions\\DynamicData\\Empiria.DynamicData.csproj": {
+                "projectPath": "E:\\empiria\\extensions\\DynamicData\\Empiria.DynamicData.csproj"
+              },
+              "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj": {
+                "projectPath": "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj"
+              },
+              "E:\\empiria\\financial.management\\Integration\\Core\\Empiria.Financial.Integration.Core.csproj": {
+                "projectPath": "E:\\empiria\\financial.management\\Integration\\Core\\Empiria.Financial.Integration.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\empiria\\financial.management\\Integration\\Core\\Empiria.Financial.Integration.Core.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\empiria\\financial.management\\Integration\\Core\\Empiria.Financial.Integration.Core.csproj",
+        "projectName": "Empiria.Financial.Integration.Core",
+        "projectPath": "E:\\empiria\\financial.management\\Integration\\Core\\Empiria.Financial.Integration.Core.csproj",
+        "packagesPath": "C:\\Users\\jErV\\.nuget\\packages\\",
+        "outputPath": "E:\\empiria\\financial.management\\Integration\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jErV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\empiria\\central\\Central\\Empiria.Central.csproj": {
+                "projectPath": "E:\\empiria\\central\\Central\\Empiria.Central.csproj"
+              },
+              "E:\\empiria\\core\\Core\\Empiria.Core.csproj": {
+                "projectPath": "E:\\empiria\\core\\Core\\Empiria.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

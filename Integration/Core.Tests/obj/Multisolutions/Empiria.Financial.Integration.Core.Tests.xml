@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Financial.Integration.Core.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Tests.Financial.Integation.ExternalCreditSystemServicesTests">
+            <summary>Unit tests for ExternalCreditSystemServices interface.</summary>
+        </member>
+    </members>
+</doc>

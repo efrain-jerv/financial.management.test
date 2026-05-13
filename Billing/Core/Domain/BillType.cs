@@ -1,0 +1,55 @@
+﻿/* Empiria Financial *****************************************************************************************
+*                                                                                                            *
+*  Module   : Billing                                    Component : Domain Layer                            *
+*  Assembly : Empiria.Billing.Core.dll                   Pattern   : Power type                              *
+*  Type     : BillType                                   License   : Please read LICENSE.txt file            *
+*                                                                                                            *
+*  Summary  : Power type that represents a bill type like a sales bill type or purchase order bill type,     *
+*             a credit note, a paycheck, a payment reception, etc.                                           *
+*                                                                                                            *
+************************* Copyright(c) La Vía Óntica SC, Ontica LLC and contributors. All rights reserved. **/
+
+using System.Linq;
+
+using Empiria.Ontology;
+
+namespace Empiria.Billing {
+
+  /// <summary>Power type that represents a bill type like a sales bill type or purchase order bill type,
+  ///a credit note, a paycheck, a payment reception, etc.</summary>
+  [Powertype(typeof(Bill))]
+  public sealed class BillType : Powertype {
+
+    #region Constructors and parsers
+
+    private BillType() {
+      // Empiria powertype types always have this constructor.
+    }
+
+    static public new BillType Parse(int typeId) => Parse<BillType>(typeId);
+
+    static public new BillType Parse(string typeName) => Parse<BillType>(typeName);
+
+    static public BillType Empty => Parse("ObjectTypeInfo.Bill");
+
+    static public FixedList<BillType> GetList() {
+      return Empty.GetAllSubclasses()
+                  .Select(x => (BillType) x)
+                  .ToFixedList();
+    }
+
+    #endregion Constructors and parsers
+
+    #region Properties
+
+    public bool IsCreditNote {
+      get {
+        return this.Name.Contains("CreditNote");
+      }
+    }
+
+    #endregion Properties
+
+  }  // class BillType
+
+}  // namespace Empiria.Billing

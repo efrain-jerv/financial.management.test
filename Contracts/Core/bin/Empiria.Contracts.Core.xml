@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Contracts.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Contracts.Adapters.ContractDto">
+            <summary>Data transfer object used to return contracts information.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractDescriptor">
+            Output Dto used to return minimal contract data
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractFields">
+            <summary>Input fields DTO used for update contracts information.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractItemDto">
+            <summary>Data transfer object used to return contracts information.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractItemFields">
+            <summary>DTO fields structure used for update contracts item information.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractItemMapper">
+            <summary>Provides data mapping services for ContractItem instances.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractItemQuery">
+            <summary>Query data transfer object used to search contracts item.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractMapper">
+            <summary>Provides data mapping services for Contract instances.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractMilestoneDto">
+            <summary>Data transfer object used to return milestone information.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractMilestoneDescriptor">
+            Output Dto used to return minimal contract milestone data
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractMilestoneFields">
+            <summary>Input fields DTO used for update contract milestones information.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractMilestoneItemDto">
+            <summary>Data transfer object used to return milestones item information.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractMilestoneItemFields">
+            <summary>DTO fields structure used for update Contract milestone items information.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractMilestoneItemMapper">
+            <summary>Provides data mapping services for ContractMilestoneItem instances.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractMilestoneMapper">
+            <summary>Provides data mapping services for contract milestone related types.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractMilestoneQuery">
+            <summary>Query data transfer object used to search contracts milestone.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractQuery">
+            <summary>Query data transfer object used to search contracts.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Adapters.ContractQueryExtensions">
+            <summary>Query data transfer object used to search contracts.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Data.ContractData">
+            <summary>Provides data read and write methods for contract instances.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Data.ContractItemData">
+            <summary>Provides data read and write methods for contract item instances.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Data.ContractMilestoneData">
+            <summary>Provides data read and write methods for contract milestone instances.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Data.ContractMilestoneItemData">
+            <summary>Provides data read and write methods for contract milestone item instances.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.Contract">
+            <summary>Represents a contract.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.ContractItem">
+            <summary>Represents a contract item.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.ContractMilestone">
+            <summary>Represents a contract milestone.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.ContractMilestoneItem">
+            <summary>Represents a contract milestone item.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.ContractType">
+            <summary>Describes a contract type.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.UseCases.ContractItemUseCases">
+            <summary>Use cases for contract items management.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.UseCases.ContractMilestoneItemUseCases">
+            <summary>Use cases for contract milestone items management.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.UseCases.ContractMilestoneUseCases">
+            <summary>Use cases for contract milestone management.</summary>
+        </member>
+        <member name="T:Empiria.Contracts.UseCases.ContractUseCases">
+            <summary>Use cases for contract management.</summary>
+        </member>
+    </members>
+</doc>

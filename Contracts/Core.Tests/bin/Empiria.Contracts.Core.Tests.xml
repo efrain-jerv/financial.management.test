@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Contracts.Core.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Tests.Contracts.ContractMilestoneItemUseCasesTests">
+            <summary>Test cases contract milestone items.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Contracts.ContractMilestoneTests">
+            <summary>Unit tests for ContractMilestone type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Contracts.ContractMilestoneUseCasesTests">
+            <summary>Test cases contract milestone and contract milestone items.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Contracts.ContractTests">
+            <summary>Test cases for retrieving contracts.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Contracts.ContractUseCasesTests">
+            <summary>Test cases for retrieving accounts from the accounts chart.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Contracts.TestingConstants">
+            <summary>Provides testing constants for Contract Milestones Management Core module.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.CashFlow.Projections.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Tests.CashFlow.ExternalVariables">
+            <summary>Provides external testing variables used for Empiria CashFlow Core module.</summary>
+        </member>
+        <member name="T:Empiria.Tests.CashFlow.Projections.CashFlowPlanTests">
+            <summary>Unit tests for CashFlowPlan instances.</summary>
+        </member>
+        <member name="T:Empiria.Tests.CashFlow.Projections.CashFlowProjectionCategoryTests">
+            <summary>Unit tests for CashFlowProjectionCategory instances.</summary>
+        </member>
+        <member name="T:Empiria.Tests.CashFlow.Projections.CashflowProjectionColumnTests">
+            <summary>Unit tests for CashflowProjectionColumn type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.CashFlow.Projections.CashFlowProjectionEntryTests">
+            <summary>Unit tests for CashFlowProjectionEntry type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.CashFlow.Projections.CashFlowProjectionTests">
+            <summary>Unit tests for CashFlowProjection instances.</summary>
+        </member>
+        <member name="T:Empiria.Tests.CashFlow.Projections.CashFlowProjectionTypeTests">
+            <summary>Unit tests for CashFlowProjectionType instances.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Budgeting.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Budgeting.Adapters.BudgetAccountMapper">
+            <summary>Mapping methods for budget accounts.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Adapters.BudgetAccountSegmentDto">
+            <summary>Output DTO for a budget account segment.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Adapters.BudgetAccountSegmentMapper">
+            <summary>Mapping methods for budget account segments.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Adapters.BudgetSegmentTypeDto">
+            <summary>Output DTO for BudgetSegmentType instances.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Adapters.BudgetSegmentTypesMapper">
+            <summary>Maps BudgetSegmentType instances to data transfer objects.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Adapters.BudgetDto">
+            <summary>Output DTO for Budget instances.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Adapters.BudgetMapper">
+            <summary>Maps Budget instances to data transfer objects.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Adapters.BudgetTypeDto">
+            <summary>Output DTO for BudgetType instances.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Adapters.BudgetTypeMapper">
+            <summary>Maps BudgetType instances to data transfer objects.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Data.BudgetAccountData">
+            <summary>Provides data access services for budget accounts.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Data.FormerBudgetAcctSegmentData">
+            <summary>Provides data access services for budget account segments.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.BudgetAccount">
+            <summary>Financial account that represents a budget account.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.BudgetAccountSearcher">
+            <summary>Searches budget accounts.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.BudgetProgram">
+            <summary>Represents a budget program.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.FormerBudgetAcctSegment">
+            <summary>Partitioned type of BudgetAccountSegmentType that holds data for a budget account segment.
+            Budget account segments can be functional or administrative areas, development programs, projects,
+            budget concepts or units, activities, financial sources, geographic regions, etcetera.
+            BudgetAccountSegment instances are the constitutive parts of budget accounts.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.FormerBudgetAcctSegmentLink">
+            <summary>Links a BudgetAccountSegment with other objects, like projects,
+            products or geolocations.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.FormerBudgetAcctSegmentType">
+            <summary>Power type that describes a budget account segment partitioned type.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.UseCases.BudgetAccountSegmentUseCases">
+            <summary>Use cases for budget account segments.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.UseCases.BudgetTypesUseCases">
+            <summary>Use cases for budget types searching and retriving.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.UseCases.BudgetUseCases">
+            <summary>Use cases for budgets searching and updating.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Budget">
+            <summary>Partitioned type that represents a budget.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.BudgetType">
+            <summary>Power type that describes a budget.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Processes.BudgetingRequest">
+            <summary>Represents a budgeting request.</summary>
+        </member>
+    </members>
+</doc>

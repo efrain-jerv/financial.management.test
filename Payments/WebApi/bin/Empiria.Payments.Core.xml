@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Payments.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Payments.Adapters.PayableEntityDto">
+            <summary>Data transfer objects used to return payable entities data.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PayableEntityItemDto">
+            <summary>Output DTO used to return payable entity item information.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PayableEntityMapper">
+            <summary>Provides data mapping services for payable entities and their items.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PayeesQuery">
+            <summary>Query DTO used to search payees.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PayeesQueryExtensions">
+            <summary>Extension methods for PayeesQuery type.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentAccountDto">
+            <summary>Output DTO for PaymentAccount instances.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentMethodDto">
+            <summary>Output DTO for PaymentMethod instances.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentInstructionHolderDto">
+            <summary>Output DTO with a payment instruction holder.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentInstructionActions">
+            <summary>Output DTO used to return available actions for a payment instruction.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentInstructionDto">
+            <summary>Output DTO used to return payment instruction.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentInstructionDescriptor">
+            <summary>Output DTO used to return minimal payment instruction's data for use in lists.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentInstructionLogDescriptorDto">
+            <summary>Data transfer objects used to return payment instruction log.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentInstructionLogMapper">
+            <summary>Provides data mapping services for payment log.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentOrderHolderDto">
+            <summary>Output DTO used to return a complete payment order.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentOrderDto">
+            <summary>Output DTO used to return a payment order.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentOrderDescriptor">
+            <summary>Output DTO used to return minimal payment order's data for use in lists.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentOrderItemDto">
+            <summary>Data transfer objects used to return payment order items.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentOrderMapper">
+            <summary>Provides data mapping services for payment orders.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentOrdersQuery">
+            <summary>Query DTO used to search payment orders.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Adapters.PaymentOrdersQueryExtensions">
+            <summary>Extension methods for RequestsQuery interface adapter.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Data.PayeesData">
+            <summary>Provides data read and write methods for Payee instances.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Data.PaymentAccountsData">
+            <summary>Provides data read and write services for payment accounts.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Data.PaymentInstructionData">
+            <summary>Provides data read and write methods for PaymentInstruction and PaymentLog data.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Data.PaymentOrderData">
+            <summary>Provides data read and write methods for contract instances.</summary>
+        </member>
+        <member name="T:Empiria.Payments.FinancialInstitution">
+            <summary>Represents a financial institution like a bank or a payments broker.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Payee">
+            <summary>Represents a payee. A payee is someone who receives payments.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PayeeFields">
+            <summary>Input fields DTO used to create and update payees.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PayeeType">
+            <summary>Holds a static list of payee types.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentAccount">
+            <summary>Holds information about a payee's payment account.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentAccountFields">
+            <summary>Input fields DTO used to update payment accounts.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentAccountType">
+            <summary>Describes the type of a payment account.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentMethod">
+            <summary>Represents a payment method.</summary>
+        </member>
+        <member name="T:Empiria.Payments.UseCases.PaymentAccountService">
+            <summary>Static services used to manage payments accounts.</summary>
+        </member>
+        <member name="T:Empiria.Payments.UseCases.PaymentInstructionUseCases">
+            <summary>Use cases for payment instructions.</summary>
+        </member>
+        <member name="T:Empiria.Payments.UseCases.PaymentOrderUseCases">
+            <summary>Use cases for payment orders management.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentInstruction">
+            <summary>Represents a payment instruction.</summary>
+        </member>
+        <member name="F:Empiria.Payments.PaymentInstructionEvent.Cancel">
+            <summary>Cancels the whole payment instruction.</summary>
+        </member>
+        <member name="F:Empiria.Payments.PaymentInstructionEvent.CancelPaymentRequest">
+            <summary>Cancels the payment request if the instruction is in waiting time.</summary>
+        </member>
+        <member name="F:Empiria.Payments.PaymentInstructionEvent.RequestPayment">
+            <summary>Requests the payment associated to the instruction.</summary>
+        </member>
+        <member name="F:Empiria.Payments.PaymentInstructionEvent.SetAsPayed">
+            <summary>Sets a failed electronic payment as payed.</summary>
+        </member>
+        <member name="F:Empiria.Payments.PaymentInstructionEvent.Reset">
+            <summary>Resets the payment instruction returning it to Programmed status.</summary>
+        </member>
+        <member name="F:Empiria.Payments.PaymentInstructionEvent.Suspend">
+            <summary>Suspends the payment instruction.</summary>
+        </member>
+        <member name="F:Empiria.Payments.PaymentInstructionEvent.None">
+            <summary>Represents an empty payment instruction event.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentInstructionEventExtMethods">
+            <summary>Extension methods for PaymentInstructionEvent.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentInstructionLogEntry">
+            <summary>Holds data for a payment instruction log entry.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentInstructionRules">
+            <summary>Provides services to control payment instruction's rules.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentInstructionStatus">
+            <summary>Enumerates the status of a payment instruction.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentInstructionStatusExtensions">
+            <summary>Extension methods for PaymentInstructionStatus.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentOrder">
+            <summary>Represents a payment order that serves as an aggregate root of payment instructions.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentOrderFields">
+            <summary>Fields structure used for create and update payment orders.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentOrderItem">
+            <summary>Represents an item of a payment order object.It can be a bill, a contract supply order,
+            a service order, a loan, travel expenses, a fixed fund provision, etc.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentOrderItemFields">
+            <summary>Contains fields in order to create or update a payment order item.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentOrderItemType">
+            <summary>Represents a payment order item type.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentOrderRules">
+            <summary>Provides services to control payment order's rules.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentOrderStatus">
+            <summary>Enumerates the status of a payment order.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentOrderStatusExtensions">
+            <summary>Extension methods for PaymentOrderStatus enumeration.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentsBrokerConfigData">
+            <summary>Holds a payments broker's configuration data.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentsTimeControl">
+            <summary>Provides services to control payment instructions timing periods and rules.</summary>
+        </member>
+        <member name="T:Empiria.Payments.PaymentType">
+            <summary>Describes a payment type related to a payment order.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Processor.Adapters.BrokerRequestDto">
+            <summary>Integration DTO used to send requests to payment broker providers.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Processor.Adapters.BrokerResponseDto">
+            <summary>Integration DTO that holds a response sent by a payments broker.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Processor.IPaymentsBrokerService">
+            <summary>Interface to integrate payments broker service providers with Empiria Payments.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Processor.PaymentsBrokerInvoker">
+            <summary>Provides payment services using external broker providers.</summary>
+        </member>
+        <member name="T:Empiria.Payments.Processor.PaymentsEngine">
+            <summary>Engine that processes payment instructions.</summary>
+        </member>
+        <member name="M:Empiria.Payments.Processor.PaymentsEngine.Start">
+            <summary>Starts the execution engine for pending messages in asyncronous mode.</summary>
+        </member>
+        <member name="M:Empiria.Payments.Processor.PaymentsEngine.Stop">
+            <summary>Stops the execution engine.</summary>
+        </member>
+    </members>
+</doc>

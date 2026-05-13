@@ -1,0 +1,177 @@
+﻿/* Empiria Financial *****************************************************************************************
+*                                                                                                            *
+*  Module   : Budgets                                    Component : Domain Layer                            *
+*  Assembly : Empiria.Budgeting.Core.dll                 Pattern   : Partitioned Common Storage Type         *
+*  Type     : Budget                                     License   : Please read LICENSE.txt file            *
+*                                                                                                            *
+*  Summary  : Partitioned type that represents a budget.                                                     *
+*                                                                                                            *
+************************* Copyright(c) La Vía Óntica SC, Ontica LLC and contributors. All rights reserved. **/
+
+using System;
+using System.Linq;
+
+using Empiria.Ontology;
+
+using Empiria.Budgeting.Transactions;
+
+using Empiria.Budgeting.Budgets.Data;
+
+namespace Empiria.Budgeting {
+
+  /// <summary>Partitioned type that represents a budget.</summary>
+  [PartitionedType(typeof(BudgetType))]
+  public class Budget : CommonStorage {
+
+    #region Constructors and parsers
+
+    protected Budget(BudgetType powertype) : base(powertype) {
+      // Required by Empiria Framework for all partitioned types.
+    }
+
+    static public Budget Parse(int id) => ParseId<Budget>(id);
+
+    static public Budget Parse(string uid) => ParseKey<Budget>(uid);
+
+    static public FixedList<Budget> GetList() {
+      return GetStorageObjects<Budget>()
+            .Sort((x, y) => x.Year.CompareTo(y.Year));
+    }
+
+
+    static public FixedList<Budget> GetList(BudgetType budgetType) {
+      Assertion.Require(budgetType, nameof(budgetType));
+
+      return GetStorageObjects<Budget>()
+            .FindAll(x => x.BudgetType.Equals(budgetType));
+    }
+
+    static public Budget Empty => ParseEmpty<Budget>();
+
+    #endregion Constructors and parsers
+
+    #region Properties
+
+    public FixedList<BudgetOperationType> AvailableOperationTypes {
+      get {
+        FixedList<BudgetTransactionType> txnTypes = AvailableTransactionTypes;
+
+        return txnTypes.SelectDistinct(x => x.OperationType);
+      }
+    }
+
+
+    public FixedList<BudgetTransactionType> AvailableTransactionTypes {
+      get {
+        FixedList<int> ids = base.ExtData.GetFixedList<int>("availableTransactionTypes", false);
+
+        return ids.Select(x => BudgetTransactionType.Parse(x))
+                  .ToFixedList()
+                  .Sort((x, y) => x.Name.CompareTo(y.Name));
+      }
+    }
+
+
+    public BudgetType BudgetType {
+      get {
+        return (BudgetType) base.GetEmpiriaType();
+      }
+    }
+
+
+    public FixedList<int> ClosedMonths {
+      get {
+        return ExtData.GetFixedList<int>("closedMonths", false);
+      }
+      private set {
+        ExtData.SetIf("closedMonths", value.Select(x => x).ToList(), value.Count != 0);
+      }
+    }
+
+
+    public bool EditionAllowed {
+      get {
+        return AvailableTransactionTypes.Count > 0;
+      }
+    }
+
+    public FixedList<INamedEntity> PlanningAutoGenerationTransactionTypes {
+      get {
+        FixedList<int> ids = base.ExtData.GetFixedList<int>("planningAutoGenerationTransactionTypes", false);
+
+        return ids.Select(x => (INamedEntity) ObjectTypeInfo.Parse(x))
+                  .ToFixedList()
+                  .Sort((x, y) => x.Name.CompareTo(y.Name));
+      }
+    }
+
+
+    public int Year {
+      get {
+        return base.ExtData.Get<int>("year");
+      }
+    }
+
+    #endregion Properties
+
+    #region Methods
+
+    public bool CanCloseMonth(int month) {
+      Assertion.Require(1 <= month && month <= 12, nameof(month));
+
+      return !ClosedMonths.Contains(month) && month < DateTime.Today.Month;
+    }
+
+
+    public bool CanOpenMonth(int month) {
+      Assertion.Require(1 <= month && month <= 12, nameof(month));
+
+      return ClosedMonths.Contains(month) && month < DateTime.Today.Month;
+    }
+
+
+    public void CloseMonth(int month) {
+      Assertion.Require(1 <= month && month <= 12, nameof(month));
+
+      var newlist = ClosedMonths.ToList();
+
+      newlist.Add(month);
+
+      ClosedMonths = newlist.ToFixedList();
+
+      Save();
+    }
+
+
+    public bool IsMonthClosed(int month) {
+      return ClosedMonths.Contains(month);
+    }
+
+
+    public bool IsMonthOpened(int month) {
+      return !IsMonthClosed(month);
+    }
+
+
+    protected override void OnSave() {
+      BudgetData.Write(this, base.ExtData.ToString());
+    }
+
+
+    public void OpenMonth(int month) {
+      Assertion.Require(1 <= month && month <= 12, nameof(month));
+
+      var newlist = ClosedMonths.ToList();
+
+      newlist.Remove(month);
+
+      ClosedMonths = newlist.ToFixedList();
+
+      Save();
+    }
+
+    #endregion Methods
+
+  }  // class Budget
+
+}  // namespace Empiria.Budgeting

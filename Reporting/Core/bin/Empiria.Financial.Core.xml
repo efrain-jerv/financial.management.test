@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Financial.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Financial.Adapters.ChartOfAccountsDto">
+            <summary>Output DTO with data related to a chart of accounts and its contents.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.ChartOfAccountsMapper">
+            <summary>Mapping methods for charts of accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.ChartOfAccountsQuery">
+            <summary>Query DTO used to search accounts chart of accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.ChartOfAccountsQueryExtensions">
+            <summary>Query DTO used to extend financial accounts extensions.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.FinancialAccountHolderDto">
+            <summary>Holder output DTO used to return a financial account</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.FinancialAccountMapper">
+            <summary> Mapping methods for financial accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.FinancialAccountQuery">
+            <summary>Query DTO used to search financial accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.FinancialAccountQueryExtensions">
+            <summary>Query DTO used to extend financial accounts extensions.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.OperationAccountsStructure">
+            <summary>Output DTO with am an account and its available and current operations for edition.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.OperationAccountDto">
+            <summary>Output DTO for an operation account.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.OperationAccountMapper">
+            <summary> Mapping methods for operation accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.StandardAccountActions">
+            <summary>Actions DTO for standard accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.StandardAccountDto">
+            <summary>Output DTO with an standard account data.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.StandardAccountDescriptor">
+            <summary>Output DTO with an standard account data to be used in lists.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Adapters.StandardAccountMapper">
+            <summary>Mapping methods for standard accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Data.FinancialAccountDataService">
+            <summary>Provides data access services for financial accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Data.StandardAccountDataService">
+            <summary>Provides data access services for standard accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.AccountAttributes">
+            <summary>Abstract class for financial account attibutes.</summary>
+        </member>
+        <member name="T:Empiria.Financial.AutoGrouping">
+            <summary>Defines an automatic grouping of standard account categories under a financial concept group.</summary>
+        </member>
+        <member name="T:Empiria.Financial.ChartOfAccounts">
+            <summary>Defines a chart of accounts that is an aggregate of standard accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.CreditAttributes">
+            <summary>Holds credit financial account attributes.</summary>
+        </member>
+        <member name="T:Empiria.Financial.CreditFinancialData">
+            <summary>Holds financial data for credit accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.FinancialAccount">
+            <summary>Partitioned type that represents a financial account as
+            an aggregate of account operations.</summary>
+        </member>
+        <member name="T:Empiria.Financial.FinancialAccountFields">
+            <summary>Input fields used to create or update financial accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.FinancialAccountType">
+            <summary>Power type that describes a financial account.</summary>
+        </member>
+        <member name="T:Empiria.Financial.FinancialData">
+            <summary>Abstract class with financial information for financial accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.OperationAccountFields">
+            <summary>Input fields used to create or update operation accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.StandardAccount">
+            <summary>Partitioned type that represents an standard account.</summary>
+        </member>
+        <member name="T:Empiria.Financial.StandardAccountCategory">
+            <summary>Represents an standard account category.</summary>
+        </member>
+        <member name="T:Empiria.Financial.AccountRoleType">
+            <summary>Describes the posting or summary role of an standard account.</summary>
+        </member>
+        <member name="F:Empiria.Financial.AccountRoleType.Sumaria">
+            <summary>Summary account (cuenta sumaria).</summary>
+        </member>
+        <member name="F:Empiria.Financial.AccountRoleType.Detalle">
+            <summary>Posting account (cuenta de detalle).</summary>
+        </member>
+        <member name="T:Empiria.Financial.DebtorCreditorType">
+            <summary>Enumerates an account debtor/creditor type of an standard  account (naturaleza).</summary>
+        </member>
+        <member name="F:Empiria.Financial.DebtorCreditorType.Deudora">
+            <summary>Debtor account (naturaleza deudora).</summary>
+        </member>
+        <member name="F:Empiria.Financial.DebtorCreditorType.Acreedora">
+            <summary>Creditor account (naturaleza acreedora).</summary>
+        </member>
+        <member name="F:Empiria.Financial.DebtorCreditorType.Combinada">
+            <summary>Debtor and Creditor account (naturaleza combinada).</summary>
+        </member>
+        <member name="T:Empiria.Financial.StandardAccountEnumsExtensionMethods">
+            <summary>Extension methods for standard acccount enumerations.</summary>
+        </member>
+        <member name="T:Empiria.Financial.StandardAccountSegment">
+            <summary>Represents an standard account segment.</summary>
+        </member>
+        <member name="T:Empiria.Financial.StandardAccountType">
+            <summary>Power type that describes an standard account.</summary>
+        </member>
+        <member name="T:Empiria.Financial.UseCases.ChartOfAccountsUseCases">
+            <summary>Provides use cases for update and retrieve chart of accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.UseCases.ExternalAccountsUseCases">
+            <summary>Use cases for retrieve accounts from external systems and update
+            them as financial accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.UseCases.FinancialAccountUseCases">
+            <summary>Provides use cases for update and retrieve financial accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.UseCases.OperationAccountUseCases">
+            <summary>Use cases for update and retrieve operation accounts belonging to financial accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Accounts.UseCases.StandardAccountUseCases">
+            <summary>Provides use cases for update and retrieve standar accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Adapters.FinancialConceptHolder">
+            <summary>Output DTO holder for financial concepts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Adapters.FinancialConceptActions">
+            <summary>Actions DTO for a financial concept.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Adapters.FinancialConceptDto">
+            <summary>Output DTO for a financial concept.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Adapters.FinancialConceptDescriptor">
+            <summary>Output DTO with an financial concept to be used in lists.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Adapters.FinancialConceptGroupDto">
+            <summary>Output DTO with data related to a financial concepts group.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Adapters.FinancialConceptGroupDescriptor">
+            <summary>Output DTO for a financial concept group.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Adapters.FinancialConceptGroupMapper">
+            <summary>Mapping methods for financial concepts groups.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Adapters.FinancialConceptMapper">
+            <summary>Mapping methods for financial concepts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Adapters.FinancialConceptsQuery">
+            <summary>Query DTO used to search financial concepts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Adapters.FinancialConceptsQueryExtensions">
+            <summary>Extension methods for FinancialConceptsQuery type.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.Data.FinancialConceptsData">
+            <summary>Provides data access services for financial concepts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.FinancialConcept">
+            <summary>Represents a financial concept.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.FinancialConceptEntry">
+            <summary>Holds information for a financial concept entry.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.FinancialConceptGroup">
+            <summary>Represents a financial concept group.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.UseCases.FinancialConceptGroupUseCases">
+            <summary>Provides use cases for retrieve financial concepts in groups.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Concepts.UseCases.FinancialConceptUseCases">
+            <summary>Provides use cases for retrieve and update financial concepts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.IBudgetable">
+            <summary>Interface for budgetable entities. Budgetable entities can be product orders
+            or requisitions, loans, payment liabilities, or any other operational or financial
+            transaction that affects a budget.</summary>
+        </member>
+        <member name="T:Empiria.Financial.ITaxEntry">
+            <summary>Represents a tax entry for budgetable entities.</summary>
+        </member>
+        <member name="T:Empiria.Financial.IPayableEntity">
+            <summary>Defines a payable entity. Payable entities are purchase orders,
+            contract supply orders, invoices, paychecks, etc.</summary>
+        </member>
+        <member name="T:Empiria.Financial.IPayableEntityItem">
+            <summary>Defines a payable entity item.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Adapters.FinancialProjectHolderDto">
+            <summary>Output holder DTO used for a cash flow projection.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Adapters.FinancialProjectDto">
+            <summary>Output DTO for financial projects data.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Adapters.FinancialProjectDescriptor">
+            <summary>Output DTO for financial projects data for use in lists.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Adapters.FinancialProjectMapper">
+            <summary> Mapping methods for financial projects.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Adapters.FinancialProjectQuery">
+            <summary>Query DTO used to search financial projects.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Adapters.FinancialProjectQueryExtensions">
+            <summary>Query DTO used to extend financial projects extensions.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Adapters.StructureForEditFinancialProjects">
+            <summary>Output DTO used to return structured data for financial projects edition.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Adapters.ProjectProgramForEditionDto">
+            <summary>Output DTO used to return project programs for financial projects edition.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Adapters.ProjectSubprogramForEditionDto">
+            <summary>Output DTO used to return project subprograms with its categories.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Adapters.StructureForEditFinancialProjectsMapper">
+            <summary>Maps structured data for use in financial projects edition.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.Data.FinancialProjectDataService">
+            <summary>Provides data access services for financial projects.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.FinancialProgram">
+            <summary>Represents a financial program.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.FinancialProgramType">
+            <summary>Enumerates the classificators of financial projects.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.FinancialProject">
+            <summary>Represents a financial project that is an aggregate of financial accounts.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.FinancialProjectCategory">
+            <summary>Represents financial project category.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.FinancialProjectFields">
+            <summary>Input fields with financial projects data.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.FinancialProjectGoals">
+            <summary>Contains demographic and financial goals data for a financial project.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.FinancialProjectRules">
+            <summary>Provides services to control financial project's rules.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.FinancialProjectType">
+            <summary>Power type that describes a financial project.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.UseCases.FinancialProjectAccountsUseCases">
+            <summary>Provides use cases for update and retrieve accounts for financial projects.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Projects.UseCases.FinancialProjectUseCases">
+            <summary>Provides use cases for update and retrieve financial projects.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Rules.Adapters.FinancialRuleDto">
+            <summary>Output DTO for a financial rule.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Rules.Adapters.FinancialRuleDescriptor">
+            <summary>Output DTO for a financial rule for use in lists.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Rules.Adapters.FinancialRuleMapper">
+            <summary>Provides financial rules mapping methods.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Rules.Adapters.FinancialRuleQuery">
+            <summary>Input query used to search financial rules.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Rules.Adapters.FinancialRuleQueryExtensions">
+            <summary>FinancialRuleQuery extension methods.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Rules.Data.FinancialRulesData">
+            <summary>Provides data access services for financial rules.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Rules.FinancialRule">
+            <summary>Represents a financial rule.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Rules.FinancialRuleCategory">
+            <summary>Represents a financial rule category that serves as an aggregate root for FinancialRules.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Rules.FinancialRuleType">
+            <summary>Power type that describes a financial rule.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Rules.UseCases.FinancialRuleUseCases">
+            <summary>Provides use cases for update and retrieve financial rules.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Billing.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Billing.Adapters.BillDescriptorDto">
+            <summary>Output DTO used to return bill descriptor data.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillFieldsMapper">
+            <summary>Mapping methods for bill fields.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillHolderDto">
+            <summary>Output DTOs used to return bills data.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillDto">
+            <summary>Output DTO used to return bill entry data.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillWithConceptsDto">
+            <summary>Output DTO used to return bill concept entry data.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillConceptDto">
+            <summary>Output DTO used to return bill entry data.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillRelatedBillDto">
+            <summary>Output DTO used to return bill related bill entry data.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillTaxEntryDto">
+            <summary>Output DTO used to return bill tax entry data.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillMapper">
+            <summary>Mapping methods for bill.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillPaymentComplementFieldsMapper">
+            <summary>Mapping methods for bill payment complement fields.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillQueryDateType">
+            <summary>Enumerates the bill dates query options.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillsQuery">
+            <summary>Input query DTO used to retrieve bills.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillsQueryExtensions">
+            <summary></summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillsStructureDto">
+            <summary>Output DTO with a list of bills with the sums of subtotal and total, and a taxes list.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.BillsStructureTaxEntryDto">
+            <summary>Output DTO with a tax type grouped sum for all the bills in a BillsStructureDto.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Adapters.FuelConsumptionBillMapper">
+            <summary>Mapping methods for fuel consumption bill fields</summary>
+        </member>
+        <member name="T:Empiria.Billing.Data.BillData">
+            <summary>Provides data read and write methods for billing.</summary>
+        </member>
+        <member name="T:Empiria.Billing.Bill">
+            <summary>Represents a bill for an invoice, credit note, paycheck, payment reception, etc.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillCategory">
+            <summary>Represents a bill category like product sales or purchase, employee paycheck, etc.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillConcept">
+            <summary>Partitioned type that represents a bill concept with its tax entries.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillConceptSchemaData">
+            <summary>Holds schema-related data for a bill concept.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillConceptExtData">
+            <summary>Holds schema-related data for a bill concept.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillConceptType">
+            <summary>Power type that represents a bill concept type like a normal concept or addenda-related.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillExtData">
+            <summary>Holds additional bill information according to the bill's.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillFields">
+            <summary>Input fields DTO used to create and update bill.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillConceptFields">
+            <summary>Input fields DTO used to create and update bill concept.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillTaxEntryFields">
+            <summary>Input fields DTO used to create and update bill tax entry.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillFieldsExtensions">
+            <summary>Extension methods for BillFields type.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillPaymentComplementFields">
+            <summary>Input fields DTO used to create and update bill payment complement.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillRelatedBill">
+            <summary>Represents a payment complement related bill for an invoice.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillRelatedBillSchemaData">
+            <summary>Holds additional bill related bill information according to the bill related schema.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillRelatedDocumentTypeExtensions">
+            <summary>Extension methods for BillRelatedDocumentType.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillSchemaData">
+            <summary>Holds additional bill information according to the bill's schema.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillSecurityData">
+            <summary>Holds bill security data according to its schema.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillStatus">
+            <summary>Enumerates the control status of a bill.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillStatusEnumExtensions">
+            <summary>Extension methods for BillStatus.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillTaxItemTotal">
+            <summary>Calculates taxes and discount totals for a set of bills.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillsTotals">
+            <summary>Calculate taxes and discount totals for a set of bills.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillTaxEntry">
+            <summary>Holds tax data related to a bill or a bill concept.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillTaxExtData">
+            <summary>Holds bill tax information.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillTaxFactorType">
+            <summary>Enumerates a bill tax factor type.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillTaxFactorTypeExtensions">
+            <summary>Extension methods for BillTaxFactorType.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillTaxMethod">
+            <summary>Enumerates a bill tax application method according to SAT Mexico fiscal rules.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillTaxMethodExtensions">
+            <summary>Extension methods for BillTaxMethod.</summary>
+        </member>
+        <member name="T:Empiria.Billing.BillType">
+             <summary>Power type that represents a bill type like a sales bill type or purchase order bill type,
+            a credit note, a paycheck, a payment reception, etc.</summary>
+        </member>
+        <member name="T:Empiria.Billing.FuelConsumptionBillFields">
+            <summary></summary>
+        </member>
+        <member name="T:Empiria.Billing.SATMexicoImporter.SATBillDto">
+            <summary>Output DTO used to return a SAT Mexico bill object.</summary>
+        </member>
+        <member name="T:Empiria.Billing.SATMexicoImporter.BillComplementFiscalLegend">
+            <summary>BillComplementFiscalLegend</summary>
+        </member>
+        <member name="T:Empiria.Billing.SATMexicoImporter.SATBillGeneralDataXmlReader">
+            <summary>Service used to read from a bill as xml string and return
+            general data to SATBillDto object</summary>
+        </member>
+        <member name="T:Empiria.Billing.SATMexicoImporter.SatBillPaymentComplementDto">
+            <summary>Output DTO used to return a SAT Mexico bill payment complement object.</summary>
+        </member>
+        <member name="T:Empiria.Billing.SATMexicoImporter.SATBillXmlReader">
+            <summary>Service used to read a bill as xml string and return a SATBillDto object.</summary>
+        </member>
+        <member name="T:Empiria.Billing.SATMexicoImporter.SATCreditNoteXmlReader">
+            <summary>Service used to read a credit note as xml string and return a SATBillDto object.</summary>
+        </member>
+        <member name="T:Empiria.Billing.SATMexicoImporter.SATFuelConsumptionBillDto">
+            <summary>Output DTO used to return a SAT Mexico bill object</summary>
+        </member>
+        <member name="T:Empiria.Billing.SATMexicoImporter.SATFuelConsumptionBillXmlReader">
+            <summary></summary>
+        </member>
+        <member name="T:Empiria.Billing.SATMexicoImporter.SATPaymentComplementXmlReader">
+            <summary>Service used to read a payment complement as xml string and return a SATBillDto object.</summary>
+        </member>
+        <member name="T:Empiria.Billing.UseCases.BillUseCases">
+            <summary>Use cases to manage billing.</summary>
+        </member>
+    </members>
+</doc>

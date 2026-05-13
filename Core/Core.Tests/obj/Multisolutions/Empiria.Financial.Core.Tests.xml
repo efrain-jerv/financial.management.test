@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Financial.Core.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Tests.Financial.Accounts.ChartOfAccountsTests">
+            <summary>Unit tests for ChartOfAccounts type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Accounts.CreditAcccountTests">
+            <summary>Unit tests for credit accounts objects.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Accounts.ExternalAccountsTests">
+            <summary>Unit tests for ExternalAccounts type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Accounts.FinancialAcccountTests">
+            <summary>Unit tests for financial accounts objects.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Accounts.StandardAccountCategoryTests">
+            <summary>Unit tests for StandardAccountCategory type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Accounts.StandardAccountSegmentTests">
+            <summary>Unit tests for StandardAccountSegment type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Accounts.StandardAccountTests">
+            <summary>Unit tests for StandardAccount type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Concepts.FinancialConceptGroupTests">
+            <summary>Unit tests for FinancialGroup type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Concepts.FinancialConceptTests">
+            <summary>Unit tests for FinancialConcept type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.DataCleaners">
+            <summary>Financial data cleaners.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.TestingConstants">
+            <summary>Provides testing constants for Empiria Financial Management core module.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Projects.FinancialProgramTests">
+            <summary>Unit tests for FinancialProgram type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Projects.FinancialProjectTests">
+            <summary>Unit tests for FinancialProject type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Rules.FinancialRuleCategoryTests">
+            <summary>Unit tests for inancialRuleCategory type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Rules.FinancialRuleTests">
+            <summary>Unit tests for FinancialRule type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Financial.Rules.FinancialRuleTypeTests">
+            <summary>Unit tests for FinancialRuleType power type.</summary>
+        </member>
+    </members>
+</doc>

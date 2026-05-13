@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Financial.Integration</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.BaseCashLedgerQuery">
+            <summary>Input query DTO used to retrieve cash ledger transactions.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.BaseCashLedgerTotalsQuery">
+            <summary>Base input query DTO used to retrieve cash ledger totals.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.BaseCashTransactionEntryDto">
+            <summary>Output DTO used to retrieve cash ledger transaction entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashAccountStatus">
+            <summary>Enumerates the cash account status in a cash ledger transaction entry.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashAccountStatusExtensionMethods">
+            <summary>Extension methods for CashAccountStatus type.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashEntryDescriptor">
+            <summary>Output DTO used to retrieve cash ledger transaction entries for use in lists.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashEntryFields">
+            <summary>Input fields used to update cash ledger transaction entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashLedgerTotalEntryDto">
+            <summary>Output DTO used to retrieve cash ledger totals.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashTransactionDescriptor">
+            <summary>Output DTO used to retrieve cash ledger transactions for use in lists.</summary>
+        </member>
+        <member name="T:Empiria.Financial.Integration.IntegrationLibrary">
+            <summary>Static library with general purpose methods.</summary>
+        </member>
+    </members>
+</doc>

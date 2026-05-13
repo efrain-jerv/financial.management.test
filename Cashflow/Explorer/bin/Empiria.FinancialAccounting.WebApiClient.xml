@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.FinancialAccounting.WebApiClient</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.FinancialAccounting.ClientServices.AccountsServices">
+            <summary>Provides financial accounting accounts services using a web proxy.</summary>
+        </member>
+        <member name="T:Empiria.FinancialAccounting.ClientServices.CashLedgerServices">
+            <summary>Provides financial accounting cash ledger transactions services using a web proxy.</summary>
+        </member>
+        <member name="T:Empiria.FinancialAccounting.ClientServices.CashLedgerTotalsServices">
+            <summary>Provides financial accounting cash ledger totals services using a web proxy.</summary>
+        </member>
+        <member name="T:Empiria.FinancialAccounting.ClientServices.CashTransactionServices">
+            <summary>Provides financial accounting cash ledger transactions services using a web proxy.</summary>
+        </member>
+        <member name="T:Empiria.FinancialAccounting.ClientServices.BaseService">
+            <summary>Base abstract type used to inherit all services.</summary>
+        </member>
+    </members>
+</doc>

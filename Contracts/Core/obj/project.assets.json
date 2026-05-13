@@ -1,0 +1,238 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "Newtonsoft.Json/13.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Empiria.Budgeting.Core/2.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Empiria.Central.Services": "8.0.0",
+          "Empiria.Core": "8.0.0",
+          "Empiria.Services": "1.0.0",
+          "Empiria.Workflow": "4.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Empiria.Budgeting.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empiria.Budgeting.Core.dll": {}
+        }
+      },
+      "Empiria.Central/8.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Empiria.Core": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Empiria.Central.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empiria.Central.dll": {}
+        }
+      },
+      "Empiria.Central.Services/8.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Empiria.Central": "8.0.0",
+          "Empiria.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Empiria.Central.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empiria.Central.Services.dll": {}
+        }
+      },
+      "Empiria.Core/8.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Empiria.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empiria.Core.dll": {}
+        }
+      },
+      "Empiria.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Empiria.Core": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Empiria.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empiria.Services.dll": {}
+        }
+      },
+      "Empiria.Workflow/4.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Empiria.Central.Services": "8.0.0",
+          "Empiria.Core": "8.0.0",
+          "Empiria.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Empiria.Workflow.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empiria.Workflow.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newtonsoft.Json/13.0.2": {
+      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Empiria.Budgeting.Core/2.0.0": {
+      "type": "project",
+      "path": "../../Budgeting/Core/Empiria.Budgeting.Core.csproj",
+      "msbuildProject": "../../Budgeting/Core/Empiria.Budgeting.Core.csproj"
+    },
+    "Empiria.Central/8.0.0": {
+      "type": "project",
+      "path": "../../../central/Central/Empiria.Central.csproj",
+      "msbuildProject": "../../../central/Central/Empiria.Central.csproj"
+    },
+    "Empiria.Central.Services/8.0.0": {
+      "type": "project",
+      "path": "../../../central/Central.Services/Empiria.Central.Services.csproj",
+      "msbuildProject": "../../../central/Central.Services/Empiria.Central.Services.csproj"
+    },
+    "Empiria.Core/8.0.0": {
+      "type": "project",
+      "path": "../../../core/Core/Empiria.Core.csproj",
+      "msbuildProject": "../../../core/Core/Empiria.Core.csproj"
+    },
+    "Empiria.Services/1.0.0": {
+      "type": "project",
+      "path": "../../../extensions/Services/Empiria.Services.csproj",
+      "msbuildProject": "../../../extensions/Services/Empiria.Services.csproj"
+    },
+    "Empiria.Workflow/4.0.0": {
+      "type": "project",
+      "path": "../../../workflow/Workflow/Empiria.Workflow.csproj",
+      "msbuildProject": "../../../workflow/Workflow/Empiria.Workflow.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "Empiria.Budgeting.Core >= 2.0.0",
+      "Empiria.Central.Services >= 8.0.0",
+      "Empiria.Core >= 8.0.0",
+      "Empiria.Services >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\jErV\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\empiria\\financial.management\\Contracts\\Core\\Empiria.Contracts.Core.csproj",
+      "projectName": "Empiria.Contracts.Core",
+      "projectPath": "E:\\empiria\\financial.management\\Contracts\\Core\\Empiria.Contracts.Core.csproj",
+      "packagesPath": "C:\\Users\\jErV\\.nuget\\packages\\",
+      "outputPath": "E:\\empiria\\financial.management\\Contracts\\Core\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\jErV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "projectReferences": {
+            "E:\\empiria\\central\\Central.Services\\Empiria.Central.Services.csproj": {
+              "projectPath": "E:\\empiria\\central\\Central.Services\\Empiria.Central.Services.csproj"
+            },
+            "E:\\empiria\\core\\Core\\Empiria.Core.csproj": {
+              "projectPath": "E:\\empiria\\core\\Core\\Empiria.Core.csproj"
+            },
+            "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj": {
+              "projectPath": "E:\\empiria\\extensions\\Services\\Empiria.Services.csproj"
+            },
+            "E:\\empiria\\financial.management\\Budgeting\\Core\\Empiria.Budgeting.Core.csproj": {
+              "projectPath": "E:\\empiria\\financial.management\\Budgeting\\Core\\Empiria.Budgeting.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "allWarningsAsErrors": true
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "targetAlias": "net48",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

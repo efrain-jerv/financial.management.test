@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.CashFlow.CashLedger</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashEntriesCommand">
+            <summary>Input command used to update cash transaction entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashEntryDto">
+            <summary>Output DTO for a cash ledger transaction entry.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashLedgerQuery">
+            <summary>Input query DTO used to retrieve cash ledger transactions.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashTransactionAnalysisEntry">
+            <summary>Output DTO that holds a result entry of a cash leger transaction analysis.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashTransactionHolderDto">
+            <summary>Output holder DTO used for a cash transaction.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashTransactionActions">
+            <summary>Action flags for cash transactions.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.Adapters.CashTransactionMapper">
+            <summary>Provides mapping services for cash ledger transactions.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.CashTransactionAnalyzer">
+            <summary>Analyzes a cash transaction to determine the status of its entries.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.CashTransactionProcessor">
+            <summary>Process a cash transaction to determine their matching cash accounts.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.CashTransactionProcessorHelper">
+            <summary>Helping methods used by CashTransactionProcessor.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.CashLedger.UseCases.CashTransactionUseCases">
+            <summary>Use cases used to retrieve and manage cash ledger transactions.</summary>
+        </member>
+    </members>
+</doc>

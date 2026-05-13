@@ -1,0 +1,61 @@
+﻿/* Empiria Financial *****************************************************************************************
+*                                                                                                            *
+*  Module   : CashFlow Management                        Component : Adapters Layer                          *
+*  Assembly : Empiria.CashFlow.CashLedger.dll            Pattern   : Output DTO                              *
+*  Type     : CashTransactionHolderDto                   License   : Please read LICENSE.txt file            *
+*                                                                                                            *
+*  Summary  : Output holder DTO used for a cash transaction.                                                 *
+*                                                                                                            *
+************************* Copyright(c) La Vía Óntica SC, Ontica LLC and contributors. All rights reserved. **/
+
+using Empiria.Documents;
+using Empiria.History;
+
+namespace Empiria.CashFlow.CashLedger.Adapters {
+
+  /// <summary>Output holder DTO used for a cash transaction.</summary>
+  public class CashTransactionHolderDto {
+
+    public CashTransactionDescriptor Transaction {
+      get; set;
+    }
+
+    public FixedList<CashEntryDto> Entries {
+      get; set;
+    }
+
+    public FixedList<DocumentDto> Documents {
+      get; set;
+    } = new FixedList<DocumentDto>();
+
+
+    public FixedList<HistoryEntryDto> History {
+      get; set;
+    } = new FixedList<HistoryEntryDto>();
+
+
+    public CashTransactionActions Actions {
+      get; set;
+    }
+
+  }  // class CashTransactionHolderDto
+
+
+  /// <summary>Action flags for cash transactions.</summary>
+  public class CashTransactionActions {
+
+    public bool CanAnalize {
+      get; set;
+    }
+
+    public bool CanReview {
+      get; set;
+    }
+
+    public bool CanUpdate {
+      get; set;
+    }
+
+  }  // class CashTransactionActions
+
+}  // namespace Empiria.CashFlow.CashLedger.Adapters

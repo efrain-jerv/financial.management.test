@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.CashFlow.Explorer</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.CashFlow.Explorer.Adapters.CashFlowAccountDto">
+            <summary>Output DTO with cash flow account data.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.Adapters.CashFlowExplorerQuery">
+            <summary>Input query DTO used to retrieve cash flow explorer information.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.Adapters.CashFlowReportQuery">
+            <summary>Input query DTO used to retrieve cash flow related reports information.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.Adapters.ConceptAnalyticsDto">
+            <summary>Output DTO for a cash ledger entry with detailed financial account information.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.CashFlowConceptsReport">
+            <summary>Builds a cash flow report with detailed concepts.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.CashFlowExplorer">
+            <summary>Process cash account totals and return them filtered and with complete information.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.CashFlowExplorerEntry">
+            <summary>Holds a cash flow dynamic explorer entry</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.CashFlowTotalEntry">
+            <summary>Holds an entry for the CashFlowTotalsReport.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.CashFlowTotalsReport">
+            <summary>Builds a cash flow totals report according to a cash flow accounts tree.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.UseCases.CashFlowExplorerUseCases">
+            <summary>Use cases used to retrieve cash flow plans.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.UseCases.CashFlowReportsUseCases">
+            <summary>Use cases used to retrieve cash flow plans.</summary>
+        </member>
+        <member name="T:Empiria.CashFlow.Explorer.UseCases.CashFlowSearchServices">
+            <summary>Provides services used to retrieve cash flow related data and entities.</summary>
+        </member>
+    </members>
+</doc>

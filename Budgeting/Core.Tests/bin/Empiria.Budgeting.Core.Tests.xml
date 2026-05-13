@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Empiria.Budgeting.Core.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Empiria.Tests.Budgeting.BudgetAccountsTests">
+            <summary>Unit tests for budget accounts.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Budgeting.BudgetTests">
+            <summary>Unit tests for Budget type.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Budgeting.Transactions.BudgetEntryTests">
+            <summary>Unit tests for BudgetEntry instances.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Budgeting.Transactions.BudgetTransactionEditionUseCasesTests">
+            <summary>Use case tests for budget transactions edition.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Budgeting.Transactions.BudgetTransactionTests">
+            <summary>Unit tests for BudgetTransaction instances.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Budgeting.Transactions.BudgetTransactionTypeTests">
+            <summary>Unit tests for BudgetTransactionType instances.</summary>
+        </member>
+        <member name="T:Empiria.Tests.Budgeting.Transactions.BudgetTransactionUseCasesTests">
+            <summary>Budget transactions edition use cases tests.</summary>
+        </member>
+        <member name="T:Empiria.Budgeting.Tests.TestingConstants">
+            <summary>Provides testing constants.</summary>
+        </member>
+    </members>
+</doc>
